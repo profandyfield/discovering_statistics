@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Cluster analysis – Discovering Statistics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/ds_favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="floating nav-fixed slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/ds_favicon.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Discovering Statistics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/discoverse.html"> 
+<span class="menu-text">The discoverse</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-books" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Books</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-books">    
+        <li>
+    <a class="dropdown-item" href="../pages/ais.html">
+ <span class="dropdown-text">An adventure in Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/dsus.html">
+ <span class="dropdown-text">Discovering Statistics Using IBM SPSS Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/dsur.html">
+ <span class="dropdown-text">Discovering Statistics Using R and RStudio</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-statistics-hell-p" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Statistics Hell-p</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-statistics-hell-p">    
+        <li>
+    <a class="dropdown-item" href="../pages/postverta.html">
+ <span class="dropdown-text">Postverta (Foundational Statistics)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/antevorta.html">
+ <span class="dropdown-text">Antevorta (Predicting Continuous Outcomes)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/porus.html">
+ <span class="dropdown-text">Porus (Comparing Means)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/egestes.html">
+ <span class="dropdown-text">Egestes (Predicting Categorical Outcomes)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/veritas.html">
+ <span class="dropdown-text">Veritas (Advanced Topics)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://discstat.myspreadshop.co.uk/"> 
+<span class="menu-text">Shop</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/profandyfield"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.discovr.rocks"> <i class="bi bi-r-circle-fill" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://twitter.com/profandyfield"> 
+<span class="menu-text"><i class="fa-brands fa-x-twitter" aria-label="x-twitter"></i></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/profandyfield.bsky.social"> 
+<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/profandyfield/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Map</h2>
+   
+  <ul>
+  <li><a href="#what-is-cluster-analysis" id="toc-what-is-cluster-analysis" class="nav-link active" data-scroll-target="#what-is-cluster-analysis">What is Cluster Analysis?</a></li>
+  <li><a href="#how-does-cluster-analysis-work" id="toc-how-does-cluster-analysis-work" class="nav-link" data-scroll-target="#how-does-cluster-analysis-work">How Does Cluster Analysis Work?</a></li>
+  <li><a href="#how-is-similarity-measured" id="toc-how-is-similarity-measured" class="nav-link" data-scroll-target="#how-is-similarity-measured">How is Similarity Measured?</a>
+  <ul class="collapse">
+  <li><a href="#correlation-coefficient-r" id="toc-correlation-coefficient-r" class="nav-link" data-scroll-target="#correlation-coefficient-r">Correlation Coefficient, <em>r</em></a></li>
+  <li><a href="#euclidean-distance-d" id="toc-euclidean-distance-d" class="nav-link" data-scroll-target="#euclidean-distance-d">Euclidean Distance, <span class="math inline">\(d\)</span></a></li>
+  </ul></li>
+  <li><a href="#creating-the-clusters" id="toc-creating-the-clusters" class="nav-link" data-scroll-target="#creating-the-clusters">Creating the Clusters</a>
+  <ul class="collapse">
+  <li><a href="#single-linkage-or-slink-nearest-neighbour" id="toc-single-linkage-or-slink-nearest-neighbour" class="nav-link" data-scroll-target="#single-linkage-or-slink-nearest-neighbour">Single Linkage or SLINK (Nearest Neighbour)</a></li>
+  <li><a href="#complete-linkage-or-clink-furthest-neighbour" id="toc-complete-linkage-or-clink-furthest-neighbour" class="nav-link" data-scroll-target="#complete-linkage-or-clink-furthest-neighbour">Complete Linkage or CLINK (Furthest Neighbour)</a></li>
+  <li><a href="#average-between-group-linkage" id="toc-average-between-group-linkage" class="nav-link" data-scroll-target="#average-between-group-linkage">Average (Between-Group) Linkage</a></li>
+  <li><a href="#wards-method" id="toc-wards-method" class="nav-link" data-scroll-target="#wards-method">Ward’s Method</a></li>
+  </ul></li>
+  <li><a href="#limitations-of-cluster-analysis" id="toc-limitations-of-cluster-analysis" class="nav-link" data-scroll-target="#limitations-of-cluster-analysis">Limitations of Cluster Analysis</a></li>
+  <li><a href="#cluster-analysis-using-ibm-spss-statistics" id="toc-cluster-analysis-using-ibm-spss-statistics" class="nav-link" data-scroll-target="#cluster-analysis-using-ibm-spss-statistics">Cluster Analysis using IBM SPSS Statistics</a>
+  <ul class="collapse">
+  <li><a href="#running-the-analysis" id="toc-running-the-analysis" class="nav-link" data-scroll-target="#running-the-analysis">Running the Analysis</a></li>
+  <li><a href="#output-from-spss-the-dendrogram" id="toc-output-from-spss-the-dendrogram" class="nav-link" data-scroll-target="#output-from-spss-the-dendrogram">Output from SPSS: The Dendrogram</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise">Exercise</a></li>
+  </ul></li>
+  <li><a href="#continue-your-journey" id="toc-continue-your-journey" class="nav-link" data-scroll-target="#continue-your-journey">Continue Your Journey</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Cluster analysis</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="../images/veritas.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aims and Objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Have a working knowledge of the ways in which similarity between cases can be quantified (e.g.&nbsp;single linkage, complete linkage and average linkage).</li>
+<li>Be able to produce and interpret dendrograms produced by SPSS.</li>
+<li>Know that different methods of clustering will produce different cluster structures.</li>
+</ul>
+</div>
+</div>
+<section id="what-is-cluster-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-cluster-analysis">What is Cluster Analysis?</h2>
+<p>We have already seen that we can use Factor Analysis to group variables according to shared variance. In factor analysis, we take several variables, examine how much variance these variables share, and how much is unique and then ‘cluster’ variables together that share the same variables. In short, we cluster together variables that look as though they explain the same variance. The example in my textbooks <span class="citation" data-cites="fielddsr22025 fieldds62024">(<a href="#ref-fielddsr22025" role="doc-biblioref">Field 2025</a>, <a href="#ref-fieldds62024" role="doc-biblioref">2024</a>)</span> measuring attitudes to SPSS or R, and the result of the factor analysis was to isolate groups of questions that seem to share their variance in order to isolate different dimensions of SPSS or R anxiety.</p>
+<p>Why am I talking about factor analysis? Well, in essence, cluster analysis is a similar technique except that rather than trying to group together variables, we are interested in grouping cases Usually, in psychology at any rate, this means that we are interested in clustering groups of people. So, in a sense it’s the opposite of factor analysis: instead of forming groups of variables based on several people’s responses to those variables, we instead group people based on their responses to several variables.</p>
+<p>So, as an example if we measured anal-retentiveness, number of friends and social skills we might find two distinct clusters of people: statistics lecturers (who score high on anal-retentiveness and low on number of friends and social skills) and students (who score low on anal-retentiveness and high on number of friends and social skills).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Summary
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cluster Analysis is a way of grouping cases of data based on the similarity of responses to several variables.</p>
+</div>
+</div>
+</section>
+<section id="how-does-cluster-analysis-work" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="how-does-cluster-analysis-work">How Does Cluster Analysis Work?</h2>
+<p>Imagine a simple scenario in which we’d measured Zippy, Bungle and George’s (<a href="#fig-zippy" class="quarto-xref">Figure&nbsp;1</a>) scores on my (fictional) SPSS Anxiety Questionnaire, SAQ <span class="citation" data-cites="fieldds62024">(<a href="#ref-fieldds62024" role="doc-biblioref">Field 2024</a>)</span>.</p>
+<div id="fig-zippy" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-zippy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_rainbow.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-zippy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Zippy, Bungle and George
+</figcaption>
+</figure>
+</div>
+<p>This questionnaire resulted in four factors: computing anxiety, statistics anxiety, maths anxiety and anxiety relating to evaluation from peers. Our three people fill out the questionnaire and from our factor analysis we get factor scores for each of these four components. As a simple measure of the similarity of their scores we could plot a line showing the relationship between their scores (<a href="#fig-cluster1" class="quarto-xref">Figure&nbsp;2</a>)</p>
+<p>Looking at <a href="#fig-cluster1" class="quarto-xref">Figure&nbsp;2</a> it’s pretty clear that Zippy and George have a very similar pattern of responses across the four factors (in fact their lines are parallel, indicating that the relative difference in their scores across factors is the same). Bungle, however, has a very different set of responses. He has a very similar score to Zippy and George for the ‘peer evaluation’ factor but for the remaining three factors his scores are very different to the other two. Therefore, we could cluster Zippy and George together based on the fact that the profile of their responses is very similar.</p>
+<div id="fig-cluster1" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_fig1.png" id="fig-cluster1" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-is-similarity-measured" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="how-is-similarity-measured">How is Similarity Measured?</h2>
+<p>Obviously, looking at graphs of responses if a very subjective way to establish whether two people have similar responses across variables. In addition, in situations in which we have hundreds of people and lots of variables, the graphs of responses that we plot would become very cumbersome and almost impossible to interpret. Therefore, we need some objective way to measure the degree of similarity between people’s scores across a number of variables. There are two types of measure: similarity coefficients and dissimilarity coefficients. Can you think of a measure of similarity of two variables that you’ve come across before (numerous times) that could be adapted to measure the similarity of people?</p>
+<section id="correlation-coefficient-r" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="correlation-coefficient-r">Correlation Coefficient, <em>r</em></h3>
+<p>The correlation coefficient is a measure of similarity between two variables (it tells us whether as one variable changes the other changes by a similar amount). In theory, we could apply the correlation coefficient to two people rather than two variables to see whether the pattern of responses for one person is the same as the other. The correlation coefficient is a standardised measure and so it has the advantage that it is unaffected by dispersion differences across variables (in plain English this means that if the variables across which we’re comparing people are measured in different units the correlation coefficient will not be affected). However, there is a problem with using a simple correlation coefficient to compare people across variables: it ignores information about the elevation of scores. Therefore, although the correlation coefficient tells us whether the pattern of responses between people are similar, it doesn’t tell us anything about the distance between two people’s profiles.</p>
+<p><a href="#fig-cluster2" class="quarto-xref">Figure&nbsp;3</a> shows two examples of responses across the factors of the SAQ. In both diagrams the two people (Zippy and George) have similar profiles (the lines are parallel). Therefore, the resulting correlation coefficient for the two graphs would be identical (in fact, you’d get a perfect correlation of 1). However, the distance between the two profiles is much greater in the second graph (the elevation is higher). Therefore, it might be reasonable to conclude that the people in the first graph are more similar than the two in the second graph, yet the correlation coefficient is the same. As such, the correlation coefficient misses important information.</p>
+<div id="fig-cluster2" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_fig2.png" id="fig-cluster2" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="euclidean-distance-d" class="level3">
+<h3 class="anchored" data-anchor-id="euclidean-distance-d">Euclidean Distance, <span class="math inline">\(d\)</span></h3>
+<p>An alternative measure is the Euclidean distance. Euclidean distance is the geometric distance between two objects (or cases). Therefore, if we were to call George subject <em>i</em> and Zippy subject <em>j</em>, then we could express their Euclidean distance in terms of the following equation:</p>
+<p><span class="math display">\[
+d_{ij} = \sqrt{\sum_{k = 1}^{p}{(x_{ik} - x_{jk})^2}}
+\]</span></p>
+<p>This equation means that we can discover the distance between Zippy and George by taking their scores on a variable, k, and calculating the difference. Now, for some variables Zippy will have a bigger score than George and for other variables George will have a bigger score than Zippy. Therefore, some differences will be positive and some negative. Eventually we want to add up the differences across a number of variables, and so if we have positive and negative difference they might cancel out. To avoid this problem, we simply square each difference before adding them up. OK, so far we’ve got Zippy and George’s scores for variable k and we’ve calculated the difference and squared it. All we do now is move onto the next variable and do the same. When we’ve done the same for every variable we add all of the differences up (it’s just like calculating the variance really). When we’ve added all of the squared differences we take the square root (because by squaring the differences we’ve changed the units of measurement to units<sup>2</sup> and so by taking the square root we revert back to the original units of measurement).</p>
+<p>In reality, the average Euclidean distance is used (so after summing the squared differences we simply divide by the number of variables) because it allows for missing data. With Euclidean distances the smaller the distance, the more similar the cases. However, this measure is heavily affected by variables with large size or dispersion differences. So, if cases are being compared across variables that have very different variances (i.e.&nbsp;some variables are more spread out than others) then the Euclidean distances will be inaccurate. As such it is important to standardise scores before proceeding with the analysis. Standardising scores is especially important if variables have been measured on different scales.</p>
+</section>
+</section>
+<section id="creating-the-clusters" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="creating-the-clusters">Creating the Clusters</h2>
+<p>Once we have a measure of similarity between cases, we can think about ways in which we can group cases based on their similarity. There are several ways to group cases based on their similarity coefficients. Most of these methods work in a hierarchical way. The principle behind each method is similar in that it begins with all cases being treated as a cluster in its own right. Clusters are then merged based on a criterion specific to the method chosen. So, in all methods we begin with as many clusters as there are cases and end up with just one cluster containing all cases. By inspecting the progression of cluster merging it is possible to isolate clusters of cases with high similarity.</p>
+<section id="single-linkage-or-slink-nearest-neighbour" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="single-linkage-or-slink-nearest-neighbour">Single Linkage or SLINK (Nearest Neighbour)</h3>
+<p>This is the simplest method and so is a good starting point for understanding the basic principles of how clusters are formed (and the hierarchical nature of the process). The basic idea is as follows:</p>
+<ol type="1">
+<li>Each case begins as a cluster.</li>
+<li>Find the two most similar cases/clusters (e.g.&nbsp;A &amp; B) by looking at the similarity coefficients between pairs of cases (e.g.&nbsp;the correlations or Euclidean distances). The cases/clusters with the highest similarity are merged to form the nucleus of a larger cluster.</li>
+<li>The next case/cluster to be merged with this larger cluster is the one with the highest similarity coefficient to either A or B.</li>
+<li>The next case merged is the one with the highest similarity to A, B or C, and so on.</li>
+</ol>
+<p><a href="#fig-cluster3" class="quarto-xref">Figure&nbsp;4</a> shows how the simple linkage method works. If we measured 5 animals on their physical characteristics (colour, number of legs, eyes etc.) and wanted to cluster these animals based on these characteristics we would start with the two most similar animals. First, imagine the similarity coefficient as a vertical scale ranging from low similarity to high. In the simple linkage method, we begin with the two most similar cases. We have two animals that are very similar indeed (in fact they look identical). Their similarity coefficient is therefore high. A fork that splits at the point on the vertical scale representing the similarity coefficient represents the similarity between these animals. So, because the similarity is high the points of the fork are very long. This fork is (1) in the diagram.</p>
+<p>Having found the first two cases for our cluster we look around for other cases. In this simple case there are three animals left. The animal chosen to next be part of the cluster is the one most similar to either one of the animals already in the cluster. In this case, there is an animal that is similar in all respects except that it has a white belly. The other two cases are less similar (because one is a completely different colour and the other is human!). The similarity coefficient of the chosen animal is slightly lower than for the first two (because it has a white belly) and so the fork (represented by a dotted line) divides at a lower point along the vertical scale. This stage is (2) in the diagram.</p>
+<p>Having added to the cluster we again look at the remaining cases and assess their similarity to any of the three animals already in the cluster. There is one animal that is fairly similar to the animal just added to the cluster. Although it is a different colour, it has the same distinctive pattern on its belly. Therefore, this animal is added to the cluster on the basis of its similarity to the third animal in the cluster (even though it is relatively dissimilar to the other two animals). This is (3) in the diagram.</p>
+<p>Finally, there is one animal left (the human) who is dissimilar to all of the animals in the cluster, therefore, he will eventually be merged into the cluster, but his similarity score will be very low. There are several important points here. The first is that the process is hierarchical. Therefore, the results we get will very much depend on the two cases that we chose as our starting point. Second, cases in a cluster need only resemble one other case in the cluster, therefore, over a series of selections a great deal of dissimilarity between cases can be introduced. Finally, the diagram we’ve drawn connecting the cases is known as a dendrogram (or tree diagram). The output of a cluster analysis is in the form of this kind of diagram.</p>
+<div id="fig-cluster3" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_fig3.png" id="fig-cluster3" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="complete-linkage-or-clink-furthest-neighbour" class="level3">
+<h3 class="anchored" data-anchor-id="complete-linkage-or-clink-furthest-neighbour">Complete Linkage or CLINK (Furthest Neighbour)</h3>
+<p>A variation on the simple linkage method is known as complete linkage (or the furthest neighbour). This method is the logical opposite to simple linkage. To begin with the procedure is the same as simple linkage in that initially we look for the two cases with the highest similarity (in terms of their correlation or average Euclidean distance). These two cases (A &amp; B) form the nucleus of the cluster. The second step is where the difference in method is apparent. Rather than look for a new case that is similar to either A or B we look for a case that has the highest similarity score to both A and B. The case © with the highest similarity to both A and B is added to the cluster. The next case to be added to the cluster is the one with the highest similarity to A, B and C. This method reduces dissimilarity within a cluster because it is based on overall similarity to members of the cluster (rather than similarity to a single member of a cluster). However, the results will still depend very much on which two cases you take as your starting point.</p>
+</section>
+<section id="average-between-group-linkage" class="level3">
+<h3 class="anchored" data-anchor-id="average-between-group-linkage">Average (Between-Group) Linkage</h3>
+<p>This method is another variation on simple linkage. Again, we begin by finding the two most similar cases (based on their correlation or average Euclidean distance). These two cases (A &amp; B) form the nucleus of the cluster. At this stage the average similarity within the cluster is calculated. To determine which case © is added to the cluster we compare the similarity of each remaining cases to the average similarity of the cluster. The next case to be added to the cluster is the one with the highest similarity to the average similarity value for the cluster. Once this third case has been added, the average similarity within the cluster is re-calculated. The next case (D) to be added to the cluster is the one most similar to this new value of the average similarity.</p>
+</section>
+<section id="wards-method" class="level3">
+<h3 class="anchored" data-anchor-id="wards-method">Ward’s Method</h3>
+<p>The linkage methods are all based on a similar principle: there is a chain of similarity leading to whether or not a case is added to a cluster. The rules governing this chain differ from one linkage method to another. A different approach is Ward’s method, which is considerably more complex than the simple linkage method. The aim in Ward’s method is to join cases into clusters such that the variance within a cluster is minimised. To do this, each case begins as its own cluster. Clusters are then merged in such a way as to reduce the variability within a cluster.To be more precise, two clusters are merged if this merger results in the minimum increase in the error sum of squares. Basically, this means that at each stage the average similarity of the cluster is measured. The difference between each cases within a cluster and that average similarity is calculated and squared (just like calculating a standard deviation). The sum of squared deviations is used as a measure of error within a cluster. A cases is selected to enter the cluster if it is the case whose inclusion in the cluster produces the least increase in the error (as measured by the sum of squared deviations).</p>
+</section>
+</section>
+<section id="limitations-of-cluster-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-of-cluster-analysis">Limitations of Cluster Analysis</h2>
+<p>There are several things to be aware of when conducting cluster analysis:</p>
+<ol type="1">
+<li>The different methods of clustering usually give very different results. This occurs because of the different criterion for merging clusters (including cases). It is important to think carefully about which method is best for what you are interested in looking at.</li>
+<li>With the exception of simple linkage, the results will be affected by the way in which the variables are ordered.</li>
+<li>The analysis is not stable when cases are dropped: this occurs because selection of a case (or merger of clusters) depends on similarity of one case to the cluster. Dropping one case can drastically affect the course in which the analysis progresses.</li>
+<li>The hierarchical nature of the analysis means that early ‘bad judgements’ cannot be rectified.</li>
+</ol>
+</section>
+<section id="cluster-analysis-using-ibm-spss-statistics" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="cluster-analysis-using-ibm-spss-statistics">Cluster Analysis using IBM SPSS Statistics</h2>
+<p>We’ll stick to a basic example. Imagine we wanted to look at clusters of cases referred for psychiatric treatment. We measured each subject on four questionnaires: Spielberger Trait Anxiety Inventory (STAI), the Beck Depression Inventory (BDI), a measure of Intrusive Thoughts and Rumination (IT) and a measure of Impulsive Thoughts and Actions (Impulse). The rationale behind this analysis is that people with the same disorder should report a similar pattern of scores across the measures (so the profiles of their responses should be similar). To check the analysis, we asked 2 trained psychologists to agree a diagnosis based on the DSM-IV. These data are in <a href="#fig-clustertbl" class="quarto-xref">Figure&nbsp;5</a> and in the file <a href="../data/diagnosis.sav">diagnosis.sav</a>.</p>
+<div id="fig-clustertbl" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-clustertbl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_tbl1.png" id="fig-clustertbl" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-clustertbl-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+<p>The first thing to note is that like factor analysis and regression, data for each variable is placed in a separate column. Therefore, each row of the Data Editor represents a single subject’s data.</p>
+<section id="running-the-analysis" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="running-the-analysis">Running the Analysis</h3>
+<p><a href="#fig-cluster_main" class="quarto-xref">Figure&nbsp;6</a> shows the main dialogue box for running cluster analysis. This dialogue box is obtained using the menu path <em>Analyze &gt; Classify &gt; Hierarchical Cluster</em>. Select the four diagnostic questionnaires from the list on the left-hand side and drag them to the box labelled <em>Variables</em>. The variable DSM is included in the data editor merely as a way of helping demonstrate what the output from a cluster analysis means, therefore, we do not need to include it in the analysis.</p>
+<div id="fig-cluster_main" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster_main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_main.png" id="fig-cluster_main" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster_main-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+<p>If you click on <em>Statistics</em> in the main dialog box then another dialog box appears (see <a href="#fig-cluster_stats" class="quarto-xref">Figure&nbsp;7</a>). The main use of this dialog box is in specifying a set number of clusters. By default, SPSS will merge all cases into a single cluster and it is down to the researcher to inspect the output to determine substantive sub-clusters. However, if you have a hypothesis about how many clusters should emerge, then you can tell SPSS to create a set number of clusters, or to create a number of clusters within a range. For this example, leave the default options as they are and proceed back to the main dialog box by clicking <em>Continue</em>.</p>
+<div id="fig-cluster_stats" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster_stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_stats.png" id="fig-cluster_stats" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster_stats-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+<p>Click on <em>Method …</em> to access the dialog box in <a href="#fig-cluster_method_final" class="quarto-xref">Figure&nbsp;8</a>. You use this dialog box to choose the method of creating clusters (some of which were described above). By default SPSS uses between-groups linkage (or average linkage) methods. However, several other options are available (e.g.&nbsp;nearest neighbour, furthest neighbour and Ward’s method). Each method can be selected by clicking on the down arrow where it says Cluster Method. For this analysis, I suggest choosing Ward’s method, but as practise I suggest coming back and trying some different methods: you’ll find you get very different results!</p>
+<p>Underneath the method selection, there are a series of options depending on whether you’re analysing interval data (as we are here), frequency data (counts) or binary data (dichotomous variables with only two possible responses). Each of these types of data has an associated set of measures of similarity. Earlier I described Euclidean distances and the correlation coefficient. By default, SPSS uses Euclidean distances (which is a good option to use). However, you cans elect a different measure of similarity if required <span class="citation" data-cites="romesburg1984 everitt2011">(see <a href="#ref-romesburg1984" role="doc-biblioref">Romesburg 1984</a>; <a href="#ref-everitt2011" role="doc-biblioref">Everitt et al. 2011</a> for detail of the possible methods)</span>.</p>
+<p>Finally, at the bottom of the dialog box is the option to standardise our data. I mentioned earlier that standardising data is a good idea (especially because some measures of similarity are sensitive to differences in the variance of variables) therefore I recommend this option. There are a number of ways in which data can be standardized but the most easily understood is to convert to a <em>z</em>-score. I suggest this option. It is possible to standardise either by variable, or across a particular case. When clustering cases (as we’re doing here, known as Q-analysis) we must standardise the variables. If we were trying to cluster variables (R-analysis) then we would need to standardise across cases. So, for this example, select <em>z</em>-scores for variables and proceed by clicking <em>Continue</em>.</p>
+<div id="fig-cluster_method_final" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster_method_final-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_method_final.png" id="fig-cluster_method_final" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster_method_final-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+<p>Once back in the main dialog box, you can select the plots dialog box by clicking <em>Plots …</em> (<a href="#fig-cluster_plots" class="quarto-xref">Figure&nbsp;9</a>). There are two types of diagram that you can ask for from a cluster analysis. The default option is an icicle plot, but the most useful for interpretation purposes is the dendrogram. The dendrogram shows us the forks (or links) between cases and its structure gives us clues as to which cases form coherent clusters. Therefore, it’s essential to request this option. Once this option is selected, click on <em>Continue</em>.</p>
+<div id="fig-cluster_plots" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster_plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_plots.png" id="fig-cluster_plots" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster_plots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+<p>Once back in the main dialog box, you can select the save dialog box by clicking <em>Save …</em>. This dialog box allows us to save a new variable into the data editor that contains a coding value representing membership to a cluster. As such, we can use this variable to tell us which cases fall into the same clusters. By default, SPSS does not create this variable. In this example, we’re expecting three clusters of people based on the DSM-IV classifications (GAD, depression and OCD) so we could select Single solution and then type 3 in the blank space (see <a href="#fig-cluster_save" class="quarto-xref">Figure&nbsp;10</a>).</p>
+<p>In reality, what we would normally do is to run the cluster analysis without selecting this option and then inspect the resulting dendrogram to establish how many substantive clusters lie within the data. Having done this, we could re-run the analysis, requesting that SPSS save coding values for the number of clusters that we identified.</p>
+<div id="fig-cluster_save" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-cluster_save-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/cluster_save.png" id="fig-cluster_save" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-cluster_save-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="output-from-spss-the-dendrogram" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="output-from-spss-the-dendrogram">Output from SPSS: The Dendrogram</h3>
+<p>The main part of the output from SPSS is the dendrogram (although ironically this graph appears only if a special option is selected). The dendrogram for the diagnosis data is presented in <a href="#fig-dendrogram" class="quarto-xref">Figure&nbsp;11</a>.</p>
+<p>As explained earlier, cluster analysis works upwards to place every case into a single cluster. Therefore, we end up with a single fork that subdivides at lower levels of similarity. For these data, the fork first splits to separate cases 1, 4, 7, 11, 13, 10, 12, 9, 15, &amp; 2 from cases 5, 14, 6, 8, &amp; 3. In actual fact, if you look at the DSM-IV classification for these subjects, this first separation has divided up GAD and Depression from OCD. This is likely to have occurred because both GAD and Depression patients have low scores on intrusive thoughts and impulsive thoughts and actions whereas those with OCD score highly on both measures. The second major division is to split one branch of this first fork into two further clusters. This division separates cases 1, 4, 7, 11 &amp; 13 from 10, 12, 9, 15, &amp; 2.</p>
+<p>Looking at the DSM classification this second split has separated GAD from Depression. In short, the final analysis has revealed 3 major clusters, which seem to be related to the classifications arising from DSM. As such, we can argue that using the STAI, BDI, IT and Impulse as diagnostic measures is an accurate way to classify these three groups of patients (and possibly less time consuming than a full DSM-IV diagnosis). Obviously these data are rather simplistic and have resulted in a very uncomplicated solution. In reality there is a lot subjectivity involved in deciding which clusters are substantive.</p>
+<div id="fig-dendrogram" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-dendrogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/dendrogram.png" id="fig-dendrogram" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-dendrogram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+<p>Having eyeballed the dendrogram and decided how many clusters are present it is possible to re-run the analysis asking SPSS to save a new variable in which cluster codes are assigned to cases (with the researcher specifying the number of clusters in the data). For these data, we saw three clear clusters and so we could re-run the analysis asking for cluster group codings for three clusters (in fact, I told you to do this as part of the original analysis). <a href="#fig-case_summary" class="quarto-xref">Figure&nbsp;12</a> shows the resulting codes for each case in this analysis. It’s pretty clear that these codes map exactly onto the DSM-IV classifications. Although this example is very simplistic it shows you how useful cluster analysis can be in developing and validating diagnostic tools, or in establishing natural clusters of symptoms for certain disorders.</p>
+<div id="fig-case_summary" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-case_summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/case_summary.png" id="fig-case_summary" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig quarto-uncaptioned margin-caption" id="fig-case_summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Try the books by</p>
+<ul>
+<li><p><span class="citation" data-cites="aldenderfer1984">Aldenderfer and Blashfield (<a href="#ref-aldenderfer1984" role="doc-biblioref">1984</a>)</span></p></li>
+<li><p><span class="citation" data-cites="everitt2011">Everitt et al. (<a href="#ref-everitt2011" role="doc-biblioref">2011</a>)</span></p></li>
+<li><p><span class="citation" data-cites="romesburg1984">Romesburg (<a href="#ref-romesburg1984" role="doc-biblioref">1984</a>)</span></p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="exercise" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="exercise">Exercise</h3>
+<p>Cluster analysis can also be used to look at similarity across variables (rather than cases). The data in the file <a href="../data/clusterdisgust.sav">clusterdisgust.sav</a> are from Sarah Marzillier’s D.Phil<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. research and show different aspects of disgust rated by many different people (each column represents some aspect of disgust — the variable labels show what each column represents). We could run a cluster analysis to see which aspects of disgust cluster together based on the similarity of people’s responses to them. Run a cluster analysis on these data but select Cluster Variables in the initial dialog box (see Figure 4). Which aspects of disgust cluster together?</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Thanks to Sarah Marzillier for letting me use her data as an example</p></div></div><div class="refs">
+
+</div>
+</section>
+</section>
+<section id="continue-your-journey" class="level2">
+<h2 class="anchored" data-anchor-id="continue-your-journey">Continue Your Journey</h2>
+<p><a href="../pages/efa.html">Next topic</a></p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-aldenderfer1984" class="csl-entry" role="listitem">
+Aldenderfer, Mark, and Roger Blashfield. 1984. <em>Cluster Analysis</em>. SAGE Publications, Inc. <a href="https://doi.org/10.4135/9781412983648">https://doi.org/10.4135/9781412983648</a>.
+</div>
+<div id="ref-everitt2011" class="csl-entry" role="listitem">
+Everitt, Brian S., Sabine Landau, Morven Leese, and Daniel Stahl. 2011. <span>“Cluster Analysis.”</span> <em>Wiley Series in Probability and Statistics</em>. Wiley. <a href="https://doi.org/10.1002/9780470977811">https://doi.org/10.1002/9780470977811</a>.
+</div>
+<div id="ref-fieldds62024" class="csl-entry" role="listitem">
+Field, Andy P. 2024. <em>Discovering Statistics Using IBM SPSS Statistics</em>. 6th ed. London: Sage.
+</div>
+<div id="ref-fielddsr22025" class="csl-entry" role="listitem">
+———. 2025. <em>Discovering Statistics Using R and RStudio</em>. 2nd ed. London: Sage.
+</div>
+<div id="ref-romesburg1984" class="csl-entry" role="listitem">
+Romesburg, H. C. 1984. <em>Cluster Analysis for Researchers.</em> Belmont, CS: Lifetime Learning Publications.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p><span class="faux-block">© 2024 Andy Field CC BY-SA 4.0</span></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

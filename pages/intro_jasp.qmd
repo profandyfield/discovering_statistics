@@ -1,0 +1,22 @@
+---
+title: "Introduction to JASP"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+[JASP](https://jasp-stats.org) is a free, open-source, cross-platform package for statistical analysis developed at the University of Amsterdam (thanks to funding from the ERC grant *Bayes or Bust!* from the European Union). Compared to R, it is more user-friendly in that it offers a nice user-interface and real-time updating of output. Compared to SPSS, it's focus on certain procedures makes it a bit less bewildering and it does Bayesian statistics as well as the classical tests that you are currently being taught, which trust me will be a major selling point in the not too distant future.
+.
+
+
+- [Companion website for our book](https://discoverjasp.com/) - not yet active
+- [Getting started in JASP](https://jasp-stats.org/getting-started/)
+
+
+## Continue Your Journey
+
+Now we've looked at software the next stop is the SPINE of statistics.
+
+[Next topic](de_mystifying_statistics.qmd)

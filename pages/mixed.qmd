@@ -1,0 +1,34 @@
+---
+title: "Mixed designs"
+---
+
+![](../images/porus_long.png)
+
+## Overview
+
+Sometimes we have factorial designs in which one or more predictors has been manipulated using different participants (or whatever entities are being tested) and one or more predictors has been manipulated using the same participants (or entities). This is known as a *mixed design*.
+You can extend the hierarchical linear model (see the last tutorial) to incorporate predictors that have been measured with different entities. However, as with repeated measures designs, when the goal is to compare means people often apply a variant of this model that is often referred to as *Mixed ANOVA*. That's the topic of this tutorial: we look at what a mixed design is and see how to apply the model.
+
+
+### IBM SPSS Statistics
+
+- [An old handout using IBM SPSS Statistics](../repository/mixed_2020.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_15` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorial
+
+### Mixed designs
+
+
+{{< video https://youtu.be/UDnGqW0S4cA >}}
+
+
+
+## Continue Your Journey
+
+Congratulations, you have finished this district. It's now time to move to the district of [Egestes](egestes.qmd)

@@ -1,0 +1,20 @@
+---
+title: "De-mystifying statistics"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+Statistics often seems like a whirring confusion of tests and procedures. However, many statistical models are variations on similar themes. Throughout my tutorials I try to focus on the commonalities between the models we fit. In this introductory tutorial I look at how lots of familiar tests are actually variations on one fairly straightforward idea: the linear model (you might have heard of it as regression). If you follow these tutorials you'll hear a lot about the linear model!
+I also start the tutorial by looking at why now, more than ever, it's important to have statistical skills to negotiate the modern world, and to enable you to look critically at the way data are manipulated by politicians and the media to suit their own agendas.
+
+## Video Tutorial
+
+### De-Mystifying Statistics
+
+{{< video https://youtu.be/7cSArk7tU4w?si=W7b7glb8PH0ahZzD >}}
+
+## Continue Your Journey
+
+[Next topic](spine.qmd)

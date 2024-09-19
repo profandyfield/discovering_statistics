@@ -1,0 +1,33 @@
+---
+title: "The General Linear Model"
+---
+
+![](../images/antevorta_long.png)
+
+## Overview
+
+
+If you have travelled through the district of [Postverta](postverta.qmd) you should, by now, understand the key concepts of the linear model. It's time to put this knowledge into practice. This tutorial looks in more detail at the GLM as well as providing some practical examples of how to fit linear models to your data. It also extends the model to look at when you have more than one predictor variable (aka *multiple regression*).
+
+### IBM SPSS Statistics
+
+- [A really old handout on regression using IBM SPSS Statistics](../repository/linearmodels.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_08` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `adventr_14` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
+
+
+## Video Tutorial
+
+### GLM: Model fit and multiple predictors (multiple regression)
+
+{{< video https://youtu.be/obZ7SVy69_8?si=nAxWZvOdYPw21nxu >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](glm_bias.qmd)

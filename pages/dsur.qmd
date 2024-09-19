@@ -1,0 +1,29 @@
+---
+title: "Discovering Statistics Using R and RStudio"
+---
+
+![](../images/dsr2_cover_small.jpg){width="50%"}
+
+## The second edition
+
+The [first edition of this book](https://uk.sagepub.com/en-gb/eur/discovering-statistics-using-r/book236067) is now quite out of date. The good news is that I'\ve been working on an update for the past 4+ years! I hope to finish it soon.
+
+:::: {.columns}
+::: {.column width="25%"}
+![](../images/hex_discovr.png){width="75%"}
+
+:::
+::: {.column width="5%"}
+:::
+
+::: {.column width="70%"}
+In the meantime, I have written a package of R tutorials [the discovr package](https://discovr.rocks/discover) that contains a lot of the new material, and you can find out about the new edition at the [companion website](https://discovr.rocks/).
+:::
+:::
+
+## Resources
+
+- [Companion website for students](https://discovr.rocks/)
+- [Companion website for instructors old edition](https://study.sagepub.com/field6e)
+- [Order from SAGE](https://uk.sagepub.com/en-gb/eur/discovering-statistics-using-ibm-spss-statistics/book285130)
+

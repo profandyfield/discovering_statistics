@@ -1,0 +1,11 @@
+---
+title: "Discovering statistics"
+subtitle: "Let the adventure begin ..."
+about:
+  template: marquee
+  image: images/strip_3_2.jpg
+---
+
+
+
+Welcome to Discovering Statistics. This website brings together many of my free resources to help you to get to grips with statistics. These include handouts, tutorials, extracts from my books, videos and blogs. It’s an adventure in statistics.

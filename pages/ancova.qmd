@@ -1,0 +1,39 @@
+---
+title: "Mixing categorical and continuous predictors (ANCOVA)"
+---
+
+![](../images/porus_long.png)
+
+## Overview
+
+In [Antevorta](antevorta.qmd) we looked at how we could incorporate categorical predictors into the linear model. Before that we spent some considerable time looking at continuous predictors. What happens when you have both? Not a lot really, you can add and subtract predictors from the model as you see fit (with relation to your specific research hypotheses).
+
+When the goal is to look at differences between group means while accounting for one or more other predictors that are continuous, people tend to refer to it as *analysis of covariance* or ANCOVA. However, as is becoming a familiar theme, this situation is just a particular case of the linear model that combines categorical and continuous predictors. This tutorial looks at this situation and gives you some practical experience.
+
+### IBM SPSS Statistics
+
+- [A really old handout on bias using IBM SPSS Statistics](../repository/ancova.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_12` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorial
+
+### Comparing means adjusted for other predictors (analysis of covariance)
+
+
+{{< video https://youtu.be/PSq4PrC9Zjc >}}
+
+
+### ANCOVA using IBM SPSS Statistics
+
+{{< video https://youtu.be/1b18fO9Vt50 >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](factorial.qmd)

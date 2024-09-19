@@ -1,0 +1,33 @@
+---
+title: "The beast of bias"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+OK, so now you understand the key concepts of the linear model, it's time to look at how models can be biased. Specifically, this tutorial looks at sources of bias such as outliers and violations of the assumptions of the model (homogeneity of variance, normality, and so on) and what effects these have on the key parts of the model that were covered in the previous tutorial (e.g., parameters, standard errors, confidence intervals, and significance tests). We will also look at some traditional ways to combat these problems (e.g., transforming data, bootstrapping and trimming).
+
+- [A really old handout on exploring data using IBM SPSS Statistics](../repository/)
+
+
+## Video Tutorials
+
+### The Beast of Bias
+
+{{< video https://youtu.be/XSjj7IeBHnA?si=IfkNk1iJ_j0sqk18 >}}
+
+### The central limit theorem (sort of)
+
+{{< video https://youtu.be/ermii2fQWOo >}}
+
+### The Bootstrap
+
+{{< video https://youtu.be/mNrxixgwA2M >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](data_viz.qmd)

@@ -1,0 +1,35 @@
+---
+title: "Categorical Predictors and Moderation"
+---
+
+![](../images/antevorta_long.png)
+
+## Overview
+
+
+In the previous two tutorials we looked at how to apply the linear model using continuous predictor variables. We move on now to explore what happens when we use categorical predictors, and the concept of moderation. Moderation occurs when the relationship between two variables changes as a function of a third variable. For example, the relationship between watching horror films (predictor) and feeling scared at bed time (outcome) might increase as a function of how vivid an imagination a person has (moderator).
+
+### IBM SPSS Statistics
+
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_10` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+## Video Tutorials
+
+### Categorical Predictors and Moderation
+
+{{< video https://youtu.be/8xA1jAIRdM8?si=1jp4S77M-XXXzrhZ >}}
+
+
+### Moderation using IBM SPSS Statistics
+
+{{< video https://youtu.be/obZ7SVy69_8?si=nAxWZvOdYPw21nxu >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](mediation.qmd)

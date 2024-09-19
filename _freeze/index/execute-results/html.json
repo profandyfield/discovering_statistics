@@ -1,0 +1,15 @@
+{
+  "hash": "9d54e3ab49887b3f00b1d4bf7392bb4b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"discovering_statistics\"\n---\n\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

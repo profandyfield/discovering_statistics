@@ -1,0 +1,25 @@
+---
+title: "MANOVA"
+---
+
+![](../images/veritas.png)
+
+## Overview
+
+During our travels through the districts of Elpis we have looked at how one continuous variable can be predicted from continuous and categorical predictor variables. Multivariate analysis of variance, MANOVA, is family of models that extend these principles to predict *more than one* outcome variable.
+
+
+
+## Video Tutorial
+
+### MANOVA Using IBM SPSS Statistics
+
+
+
+{{< video https://youtu.be/m0zV_wFGA1I >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](meta.qmd)

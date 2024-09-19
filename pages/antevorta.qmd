@@ -1,0 +1,19 @@
+---
+title: "Antevorta (Predicting Continuous Outcomes)"
+---
+
+![](../images/antevorta_long.png)
+
+## Overview
+
+You have now entered the district of Antevorta. This district is all about predicting variables that are continuous. We take what we have already learnt about the general linear model, GLM (or, regression as you might have heard it called) in the [Postverta](postverta.qmd) district and develop it. The GLM is in fact a flexible analytic tool that takes on many forms, for example 'ANOVA' which people often associate with comparing differences between means is a special case of the GLM (and is covered in the [Porus](porus.qmd) district). For now, we will look at the GLM in more detail (with examples), how to use it, and what things bias it. The topics covered are:
+
+1. [The Linear Model](glm.qmd): predicting continuous outcomes from continuous variables
+2. [Bias in linear models](glm_bias.qmd): taking what we learnt about bias in the [Postverta](postverta.qmd) district and applying it to concrete examples. We also look in more detail at bootstrapping.
+3. [Moderation and Categorical Predictors](moderation.qmd): this tutorial begins to look at how categorical predictors can be incorporated into the GLM as a pre-cursor to the next district, [Porus](porus.qmd).
+4. [Mediation](mediation.qmd): this tutorial extends the GLM to situations where we want to test for mediation.
+
+
+## Continue Your Journey
+
+The next district is [Porus](porus.qmd)

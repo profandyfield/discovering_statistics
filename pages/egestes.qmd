@@ -1,0 +1,15 @@
+---
+title: "Egestes (Predicting Categorical Outcomes)"
+---
+
+
+![](../images/egestes_long.png)
+
+We've negotiated three districts so far, in [Postverta](postverta.qmd) we learnt the foundations and key concepts associated with the general linear model, then in [Antevorta](antevorta.qmd) we looked at how we use this model to predict continuous outcomes from continuous predictor variables. Next, in [Porus](porus.qmd) we saw how predictions can be made from categorical predictor variables too. Now we are in the district of Egestes, where we will begin to look at predicting categorical outcome variables (rather than the continuous ones we have looked at in the other districts). The topics covered are:
+
+1. [The Chi-square test](chi.qmd): Associations between categorical variables
+2. [Logistic regression](log_reg.qmd): predicting a binary categorical outcome from continuous or categorical variables. It's coming ....
+
+## Continue Your Journey
+
+The next district is [Veritas](veritas.qmd)

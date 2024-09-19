@@ -1,0 +1,41 @@
+---
+title: "The SPINE of Statistics"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+Having been introduced to the idea that many common statistical tests are variations on a common theme (the linear model), the next topic looks at some specific statistical concepts that have relevance to this model. Although this is, of course, a vast oversimplification, if you understand the five concepts described in this tutorial then you have already grasped most of what you need to know to get going with analysing data with classical models. The five concepts are:
+
+1. Parameters
+2. Estimation
+3. Null Hypothesis Significance Testing (NHST) 
+4. Interval estimates (confidence intervals)
+5. Standard error
+
+### R
+
+- [Tutorial `discovr_03` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorials
+
+### Standard error and confidence intervals
+
+{{< video https://youtu.be/wUT1qstylFQ?si=SMnwICtHxqglRlV6 >}}
+
+### Null hypothesis significance testing
+
+{{< video https://youtu.be/IXYDMMBisr8?si=rekACCPLHsaQ6EcU >}}
+
+### Effect sizes and Bayes factors
+
+{{< video https://youtu.be/DjpxTmiombE?si=QSyXVTo0r_rKbRi0 >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](bias.qmd)

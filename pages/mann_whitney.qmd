@@ -1,0 +1,30 @@
+---
+title: "Mann-Whitney Test"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+The Mann–Whitney test is a non-parametric test that looks for differences between two independent samples. That is, it tests whether the populations from which two samples are drawn have the same location. It is functionally the same as Wilcoxon’s rank-sum test, and both tests are non-parametric equivalents of the independent *t*-test. 
+
+:::{.callout-warning}
+
+This test has been superseded by developments in robust statistical tests. It’s included here for historical reasons.
+:::
+
+### IBM SPSS Statistics
+
+- [A really old handout on nonparametric tests using IBM SPSS Statistics](../repository/nonparametric.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+
+## Video Tutorial
+
+{{< video https://youtu.be/esNb6RFIXvw >}}
+
+
+## Continue Your Journey
+
+[Next topic](wilcoxon.qmd)

@@ -1,0 +1,28 @@
+---
+title: "Descriptive Statistics"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+This tutorial is a bit lacking at present! It will, in time (maybe), look at how to summarize data using measures of central tendency such as the mean, mode and median, and measures of dispersion such as variance, standard deviation and standard error. It will also look at confidence intervals. My books cover all of these topics beautifully by the way;-)
+
+### IBM SPSS Statistics
+
+- [A really old handout on descriptives using IBM SPSS Statistics](../repository/revisespss.pdf)
+- [Another on descriptives using IBM SPSS Statistics](../repository/exploringdata.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorials `discovr_02` and `discovr_03` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorials `adventr_03` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
+- [Data for An adventure in Statistics](https://www.statisticsadventure.com/data/)
+
+
+
+## Continue Your Journey
+
+[Next topic](z_scores.qmd)

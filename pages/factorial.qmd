@@ -1,0 +1,40 @@
+---
+title: "Bias in the General Linear Model"
+---
+
+![](../images/porus_long.png)
+
+## Overview
+
+In [Antevorta](antevorta.qmd) we looked at moderation: that is when the effect of one predictor on an outcome depends upon a second predictor. In experimental research, this might be when the effect of one predictor (representing a treatment, for example) on an outcome occurs only for certain groups of people.
+Imagine we had a pill that we believed would make you more confident. We gave one group of people the pill and another group a placebo. This is out first predictor variable: pill vs. placebo. Our outcome measure was a subjective rating of how confident the person felt in a series of interactions. However, these interactions different with respect to whether the interaction was with someone of the same sex or opposite. This is our second predictor variable. If it turns out that confidence ratings for those who had the pill than those that didn't, then the pill seems to have increased confidence. However, if this difference is much stronger when interacting with people of the same sex then we have moderation: the pill improves confidence in one situation but not another: its effect depends on the second variable.
+
+This scenario is a factorial design, and we can apply a linear model to look at these effects. When all predictors are categorical then people often label the model as *factorial ANOVA* even though it is just a particular case of the linear model. This tutorial looks at these factorial designs and gives you some practical experience of interpreting moderation effects (interactions between predictor variables).
+
+### By hand
+
+- [Simple effects analysis](https://discoverspss.com/pages/oliver_twisted#chapter-13)
+
+### IBM SPSS Statistics
+
+- [A really old handout on factorial ANOVA using IBM SPSS Statistics](../repository/twoway.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_13` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `adventr_17` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
+
+
+## Video Tutorial
+
+### Factorial designs
+
+
+{{< video https://youtu.be/8xA1jAIRdM8 >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](rm.qmd)

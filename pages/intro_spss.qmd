@@ -1,0 +1,50 @@
+---
+title: "Introduction to IBM SPSS Statistics"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+
+IBM [SPSS](https://en.wikipedia.org/wiki/SPSS) Statistics is one of the most widely used statistical software packages in the world. If you did a social science degree then there's a good chance you were taught it. This pages has some resources to get you started.
+
+
+
+- [An old handout on the IBM SPSS Statistics environment, including entering data and some basic graphs](../repository/revisespss.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+
+## Video Tutorials
+
+### Entering Data
+
+{{< video https://youtu.be/b163iBByycw >}}
+
+### The Viewer Window
+
+{{< video https://youtu.be/8dDIw_oJsBs >}}
+
+### The Syntax Window
+
+{{< video https://youtu.be/b8Yb26hMrXo >}}
+
+### Selecting Cases
+
+{{< video https://youtu.be/TiMk-4yFC24 >}}
+
+### Exporting SPSS Output to MS Word
+
+{{< video https://youtu.be/FDwGnWC5nQY >}}
+
+### Importing Excel Files
+
+{{< video https://youtu.be/nchjj4XzIWc >}}
+
+
+
+## Continue Your Journey
+
+
+[Next topic](intro_r.qmd)

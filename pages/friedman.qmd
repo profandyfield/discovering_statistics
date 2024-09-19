@@ -1,0 +1,30 @@
+---
+title: "Friedman's ANOVA"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+
+Friedman's ANOVA is a non-parametric test of whether more than two related groups differ. It is the non-parametric version of one-way repeated-measures ANOVA. That is, it tests whether the populations from which more than two related samples are drawn have the same location.
+
+:::{.callout-warning}
+
+This test has been superseded by developments in robust statistical tests. It’s included here for historical reasons.
+:::
+
+### IBM SPSS Statistics
+
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+
+## Video Tutorial
+
+{{< video https://youtu.be/esNb6RFIXvw >}}
+
+
+## Continue Your Journey
+
+Well done, you have completed this district. The next district is [Antevorta](antevorta.qmd)

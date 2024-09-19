@@ -1,0 +1,20 @@
+---
+title: "Structural Equation Modelling (SEM)"
+---
+
+![](../images/veritas.png)
+
+## Overview
+
+Structural Equation Modelling (SEM) is an attempt to model causal relations between variables by including all variables that are known to have some involvement in the process of interest. Essentially it's a big, fancy linear model that models lots of relationships between lots of variables and estimates the parameters of those relationships.
+
+### Theory
+
+- [Overview of SEM](../repository/sem.pdf)
+
+
+
+
+## Continue Your Journey
+
+Congratulations your journey is, for now, at an end.

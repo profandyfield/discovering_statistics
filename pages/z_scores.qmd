@@ -1,0 +1,23 @@
+---
+title: "<em>Z</em>-scores and probability"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+A <em>z</em>-score is the value of an observation expressed in standard deviation units. The sign of the score indicates whether it is above (positive) or below (negative) the mean, and the value quantifies how many standard deviations the score is from the mean. A <em>z</em>-score is calculated by taking the observation, subtracting from it the mean of all observations, and dividing the result by the standard deviation of all observations. By converting a distribution of observations into <em>z</em>-scores a new distribution is created that has a mean of 0 and a standard deviation of 1. This has several uses, but the main one is that it allows us to start mapping observed scores onto probability values. <em>An Adventure in Statistics</em> has a whole chapter on this topic.
+Classical probability is the theoretical probability of an event. For a given trial or set of trials, the classical probability of an event, assuming that all outcomes are equally likely, is the frequency of an event divided by the sample space, or total number of possible outcomes. For example, in my book <em>An Adventure in Statistics</em>, the main character, Zach contemplates crossing the bridge of death. There were two possible outcomes: he lives or dies. Therefore, the sample space for a single trial contains two events (alive or dead). Assuming these outcomes occur with equal frequency, then the classical probability of living is the frequency of living in the sample space (which is 1) divided by the total number of events in the sample space, 2. In other words, it is 0.5 or 50%.
+Compare this with <em>empirical probability</em> or the <em>relative frequency</em>. The empirical probability is the probability of an event based on the observation of many trials. Like classical probability, it is the frequency of an event divided by the sample space, but the frequency and sample space are determined by actual observations. For example, when Zach contemplated crossing the bridge of death in my book, there were two possible outcomes: he lives or dies. If he watched 10 people cross the bridge, and 7 of those people died, then the empirical probability of living is the frequency of living (the number of people he observed who survived, 3) divided by the sample space, which is the total number of observations he made, 10. In other words, it is 0.3 or 30%. 
+Finally, conditional probability is the probability of an outcome given that some other outcome has already happened. For example, the probability that you are bored given that you have read this overview is a conditional probability, $p(boredom|read overview)$.
+
+
+- [A handout on on using R to get <em>z</em>-scores](../repository/ais_06_r_handout.pdf)
+- [A handout on  using R to explore classical probability, empirical probability and conditional probability.](../ais_07_r_handout.pdf/exploringdata.pdf)
+- [Data for An adventure in Statistics](https://www.statisticsadventure.com/data/)
+
+
+## Continue Your Journey
+
+[Next topic](associations.qmd)

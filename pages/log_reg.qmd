@@ -1,0 +1,36 @@
+---
+title: "Logistic regression"
+---
+
+![](../images/egestes_long.png)
+
+## Overview
+
+Having travelled through the districts of [Postverta](postverta.qmd), [Antevorta](antevorta.qmd) and [Porus](porus.qmd) you should be well versed in how you can use the general linear model to predict continuous outcome variables from categorical and continuous predictor variables. However, what happens if you want to predict categorical outcomes?
+This tutorial extends the general linear model to look at the situation where you want to predict membership of one of two categories, often called *binary logistic regression*. For example, imagine you wanted to look at what variables predict survival (or not) of crossing a bridge of death^[In my book, an adventure in statistics, the main character Zach has to travel across a bridge of death along which he faces various challenges that if he fails results in him being removed from the bridge in some painful, horrific and fatal way. If that doesn’t make you want to buy the book, nothing will.]. You are looking to predict survival or not (a binary outcome) and you might want to predict it from variables such as Intelligence (a continuous predictor), agility (also continuous), and perhaps species like whether the entity trying to cross the bridge is human or cat^[In the book Zach is accompanied by a sarcastic yet highly intelligent cat. Come on, what more do you want from a stats book?].
+
+
+
+### IBM SPSS Statistics
+
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_20` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorial
+
+### Logistic regression
+
+
+{{< video https://youtu.be/yniFrp8vQLQ >}}
+
+
+
+
+## Continue Your Journey
+
+Excellent work, you have finished this district. It's now time to move to the final district of [Veritas](veritas.qmd)
+

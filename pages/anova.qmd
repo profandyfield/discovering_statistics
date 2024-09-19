@@ -1,0 +1,50 @@
+---
+title: "Categorical predictors (One-way ANOVA)"
+---
+
+![](../images/porus_long.png)
+
+## Overview
+
+## Overview
+
+*Analysis of variance (ANOVA)* is a statistical procedure that uses the *F-*ratio to test the overall fit of a linear model. In experimental research this linear model tends to be defined in terms of group means and the resulting ANOVA is therefore an overall test of whether group means differ. However, it is a special case of ordinary linear regression in which the outcome variable is continuous and the predictors are categorical. A one-way ANOVA implies a linear model in which a continuous variable is predicted from one categorical variable (of two or more categories). A one-way *between-group* ANOVA implies that the categorical predictor contains categories that are independent (that is scores in one category are unrelated to those in another). In experimental research this occurs when, for example, different entities are randomized to different experimental groups (a *between-group design*).
+If the *F*-test suggests that there are significant group differences (i.e. you can predict the outcome significantly from category membership) it is customary to follow-up the analysis with *planned contrasts* or *post hoc tests*.
+
+- **Planned contrasts** are a set of comparisons between group means that are constructed before the data are collected. These are theory-led comparisons and are based on the idea of partitioning the variance created by the overall effect of group differences into gradually smaller portions of variance. These tests have more power than *post hoc tests*.
+- **Post hoc tests** are a set of comparisons between group means that were not thought of before data were collected. Typically these tests involve comparing the means of all combinations of pairs of groups. To compensate for the number of tests conducted, each test uses a strict criterion for significance. As such, they tend to have less power than *planned contrasts*. They are usually used for exploratory work for which no firm hypotheses were available on which to base planned contrasts.
+
+### By hand
+
+- [A really old handout on the theory](../repository/anovabyhand.pdf)
+- [Welch's robust F](https://discoverspss.com/pages/oliver_twisted#chapter-12)
+
+### IBM SPSS Statistics
+
+- [A really old handout on one-way ANOVA using IBM SPSS Statistics](../repository/onewayanova.pdf)
+- [A really old handout on contrasts using IBM SPSS Statistics](../repository/contrasts.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_11` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `adventr_16` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
+
+
+
+## Video Tutorial
+
+### Categorical predictors in the linear model
+
+
+{{< video https://youtu.be/RbRWCwQWRJs >}}
+
+### Contrast coding
+
+{{< video https://youtu.be/fXDNBeY2qp0 >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](ancova.qmd)

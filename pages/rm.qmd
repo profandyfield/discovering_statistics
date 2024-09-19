@@ -1,0 +1,39 @@
+---
+title: "Repeated measures designs"
+---
+
+![](../images/porus_long.png)
+
+## Overview
+
+Sometimes we collect data using repeated measures designs in which observations of the same entities are made at different points in time. The linear model we have discussed up until this point doesn't handle this kind of data. In fact, it assumes that scores on the outcome variable are independent (this will not be true when observations come from the same entities). What to do?
+In fact, the linear model can be expanded to look at repeated observations of the same entities (time series designs, longitudinal designs, repeated measures, growth models, whatever you choose to call them). What is applied is known as a *multilevel model* or *hierarchical linear model*. Essentially it's a linear model, just a slightly more complicated one that factors in dependencies between observations. A special variant of this kind of model is a repeated measures ANOVA, which is comparable to a multilevel model but with the restrictive assumption of *sphericity*. Despite being less useful than the more versatile multilevel model framework, repeated measures ANOVA is often what gets taught, so here we are looking at it. This tutorial looks at repeated measures designs when your aim is to compare means, explains sphericity and has a look at applying the model to examples.
+
+### By hand
+
+- [Repeated measures ANOVA](../repository/onewayrmhand.pdf) by hand
+- What is [Sphericity](../repository/field_1998_sphericity.pdf)
+
+
+### IBM SPSS Statistics
+
+- [A really old handout using IBM SPSS Statistics](../repository/repeatedmeasures.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_14` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorial
+
+### Repeated measures
+
+
+{{< video https://youtu.be/UjXqZiA2XWc >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](mixed.qmd)

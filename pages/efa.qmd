@@ -1,0 +1,39 @@
+---
+title: "Factor Analysis and PCA"
+---
+
+![](../images/veritas.png)
+
+## Overview
+
+This tutorial looks at the popular psychometric procedures of factor analysis, principal component analysis (PCA) and reliability analysis. Factor analysis is a multivariate technique for identifying whether the correlations between a set of observed variables stem from their relationship to one or more latent variables in the data, each of which takes the form of a linear model. In comparison PCA is a multivariate technique for identifying the linear components of a set of variables. Both are methods for reducing down large numbers of variables into smaller clusters (factors or components).
+
+
+### Theory
+
+- [Questionnaire design](../repository/designing_questionnaires.pdf)
+
+### IBM SPSS Statistics
+
+- [An old handout on factor analysis using IBM SPSS Statistics](../repository/factor.pdf)
+- [An old handout on reliability analysis using IBM SPSS Statistics](../repository/reliability.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_18` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorial
+
+### Factor Analysis/PCA Using IBM SPSS Statistics
+
+
+
+{{< video https://youtu.be/UWP9OEoaNnE >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](manova.qmd)

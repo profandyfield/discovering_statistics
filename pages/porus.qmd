@@ -1,0 +1,22 @@
+---
+title: "Porus (Comparing Means)"
+---
+
+![](../images/porus_long.png)
+
+## Overview
+
+Congratulations on safely negotiating two districts of Elpis. In [Postverta](postverta.qmd)  we learnt the foundations and key concepts associated with the general linear model, then in [Antevorta](antevorta.qmd)  we looked at how we use this model to predict continuous outcomes from continuous predictor variables. You have now entered the district of Porus.
+This district is all about predicting a continuous outcome variable from categorical predictors. Many people tend to put these designs under a banner of 'ANOVA', but in fact they are all encapsulated by the general linear model. This section develops what you learned in the district to extend the general linear model, GLM to compare differences between means. The topics covered are:
+
+1. [Comparing two means](two_means.qmd): the *t*-test or predicting a continuous outcome from a variable with two categories
+2. [Comparing several independent means](anova.qmd): predicting a continuous outcome from a variable with several independent categories
+3. [Analysis of Covariance](ancova.qmd): predicting a continuous outcome from a mix of categorical and continuous predictor variables
+4. [Factorial designs](factorial.qmd): predicting a continuous outcome from a several categorical variables
+4. [Repeated measures designs](rm.qmd): predicting a continuous outcome from one or more variables containing dependent categories
+5. [Mixed designs](mixed.qmd): predicting a continuous outcome from at least one variable containing independent categories, and at least one variable containing dependent categories
+
+
+## Continue Your Journey
+
+The next district is [Egestes](egestes.qmd)

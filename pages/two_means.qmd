@@ -1,0 +1,45 @@
+---
+title: "Comparing Two Means"
+---
+
+![](../images/porus_long.png)
+
+## Overview
+
+In [Antevorta](antevorta.qmd) we looked at how we can incorporate categorical predictors into the linear model. When we do this the model parameters represent differences between means. A more traditional way to conceptualise this situation is the *t*-test. This tutorial looks at two variants of this test:
+
+- The independent *t*-test uses the *t*-statistic to establish whether two means collected from independent samples differ significantly.
+- The paired-samples *t*-test (aka the dependent *t*-test and the matched-pairs *t*-test) uses the *t*-statistic to establish whether two means collected from the same sample (or related observations) differ significantly.
+
+Both of these tests are special cases of the GLM, but are often taught as independent entities, so this section is really just to tie in with how you might be taught. However, look back at the material in [Antevorta](antevorta.qmd) to see how the same comparisons between means can be made within the framework of the linear model.
+
+
+### IBM SPSS Statistics
+
+- [A really old handout using IBM SPSS Statistics](../repository/t_test.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_09` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `adventr_15` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
+
+
+## Video Tutorial
+
+### Categorical predictors in the linear model
+
+
+{{< video https://youtu.be/RbRWCwQWRJs >}}
+
+
+### T-Tests using IBM SPSS Statistics
+
+
+{{< video https://youtu.be/EkbkI7x6bNA >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](anova.qmd)

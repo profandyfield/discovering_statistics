@@ -1,0 +1,50 @@
+---
+title: "Data visualization"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+This tutorial takes a breather from the linear model to look at presenting data and writing up research. We look at bar graphs, histograms, box-plots and line graphs. We also take a look at the format of research reports (i.e. journal articles) and how to prepare a report (based loosely on APA format, which is a popular style convention in Psychology journals).
+
+### IBM SPSS Statistics
+
+- [A really old handout on plots using IBM SPSS Statistics](../repository/revisespss.pdf)
+- [Another old handout that includes material on histograms using IBM SPSS Statistics](../repository/exploringdata.pdf)
+- [Editing plots in SPSS](https://discoverspss.com/pages/oliver_twisted#please-sir-can-i-have-some-more-plots)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorials `discovr_02` and `discovr_05` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorials `adventr_03` and `adventr_05` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
+
+
+### Writing up research (APA style)
+
+- [Handout on APA style](../repository/writinglabreports.pdf)
+
+
+## Video Tutorials
+
+### Editing plots in IBM SPSS Statistics
+
+{{< video https://youtu.be/en0t0QS9uo8 >}}
+
+### Writing up research APA style (old)
+
+You can tell how old this is because I'm wearing a foo fighters t-shirt. Haven't listened to them in a long time.
+
+{{< video https://youtu.be/vekCPvF016A >}}
+
+### The Bootstrap
+
+{{< video https://youtu.be/mNrxixgwA2M >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](descriptives.qmd)

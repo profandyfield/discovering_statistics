@@ -1,0 +1,31 @@
+---
+title: "Mediation"
+---
+
+![](../images/antevorta_long.png)
+
+## Overview
+
+
+If you have travelled through the district of [Postverta](postverta.qmd) you should, by now, understand the key concepts of the linear model. It's time to put this knowledge into practice. This tutorial looks in more detail at the GLM as well as providing some practical examples of how to fit linear models to your data. It also extends the model to look at when you have more than one predictor variable (aka *multiple regression*).
+
+### IBM SPSS Statistics
+
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_10` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorials
+
+### Mediation using IBM SPSS Statistics
+
+{{< video https://youtu.be/RqkGMqDU20Q >}}
+
+
+
+## Continue Your Journey
+
+The next district is [Porus](porus.qmd)

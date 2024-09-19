@@ -1,0 +1,67 @@
+---
+title: "Chi-Square Test"
+---
+
+![](../images/egestes_long.png)
+
+## Overview
+
+On our journey so far we have looked at variations on the linear model when the outcome variable that we want to predict is continuous. Sometimes, however, we want to predict outcomes that are categorical. For example, we might want to predict whether or not someone gets a disease. At a simple level this might entail looking at the relationships between categorical variables (for example, does smoking vs not correlate with getting the disease vs. not?).
+The chi-square statistic is used in a variety of situations, but one of them is to test whether two categorical variables forming a contingency table are associated.
+A *contingency table* displays the cross-classification of two or more categorical variables. The levels of each variable are arranged in a grid, and the number of observations falling into each category is noted in the cells of the table. For example, if we took the categorical variables of learning statistics (with two categories: being forced to learn it or not), and depression (with two categories: diagnosis or not), we could construct a table as below. This instantly tells us that 150 of 155 people who were made to learn statistics ended up with a diagnosis of depression, compared to only 48 of 471 people who did not learn statistics. A chi-square test would enable us to see whether this apparent relationship is statistically significant.
+
+<table>
+<thead>
+<tr>
+  <th>Depression</th>
+  <th align="center">Learn Statistics</th>
+  <th align="right">No Statistics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Diagnosis</td>
+  <td align="center">150</td>
+  <td align="right">48</td>
+</tr>
+<tr>
+  <td>No Diagnosis</td>
+  <td align="center">5</td>
+  <td align="right">423</td>
+</tr>
+<tr>
+  <td>Total</td>
+  <td align="center">155</td>
+  <td align="right">471</td>
+</tr>
+</tbody>
+</table>
+
+
+### IBM SPSS Statistics
+
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_19` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorial
+
+### The Chi-Square Test Using IBM SPSS Statistics
+
+
+{{< video https://youtu.be/532QXt1PM-Q >}}
+
+
+### T-Tests using IBM SPSS Statistics
+
+
+{{< video https://youtu.be/EkbkI7x6bNA >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](log_reg.qmd)

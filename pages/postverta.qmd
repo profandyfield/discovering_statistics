@@ -1,0 +1,44 @@
+---
+title: "Postverta (Foundational Statistics)"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+Your journey through Elpis begins here in the district of Postverta. This district contains the foundations of statistics. There are three sections: the first looks at different software options, the next foundational statistical concepts such as fitting models and bias, as well as how to describe and present data; the final section looks at so-called <em>nonparamatric</em> tests (which have laregly been replaced by better methods).
+
+### Software
+
+You have lots of choices of software: 
+
+1. [Introduction to IBM SPSS Statistics](intro_spss.qmd)
+2. [Introduction to R](intro_r.qmd)
+3. [Introduction to JASP](intro_jasp.qmd)
+
+### The SPINE of Statistics
+
+This section lays the foundations for all that is to follow. We look at some of the key concepts in statistics as well as writing up and presenting data. The topics covered are:
+
+
+1. [Demystifying statistics](de_mystifying_statistics.qmd): Why do we need statistics and is it as complicated as it seems?
+2. [The SPINE of Statistics](spine.qmd): a cheeky look at five key concepts in statistics (parameters, estimation, null hypothesis significance testing (NHST), confidence intervals, and the standard error)
+3. [Bias in statistical models](bias.qmd): a look at the key assumptions of the linear model and how they might bias models (homogeneity of variance, the central limit theorem, normality, outliers and shit like that).
+4. [Data visualisation](data_viz): a look at presenting data and writing up research.
+5. [Summarizing data](descriptives.qmd): a look at describing data.
+6. [<em>z</em>-scores and probability](z_scores.qmd): because what's not fun about probability?
+7. [Associations/correlation (relationships between variables)](associations.qmd): looking at relationships between variables
+
+### Nonparametric statistics
+
+Non-parametric tests are a groups of tests that are so-called 'assumption free' (although strictly speaking this isn't true. These tests are often taught but in the modern computing age there are more sophisticated ways of obtaining robust models. I include some very out-of-date historical material in this section just for the hell of it, but you can skip this part without needing to lose sleep. Topics covered are:
+
+1. [Mann-Whitney Test](mann_whitney.qmd)
+2. [Wilcoxon Signed Rank Test](wilcoxon.qmd)
+3. [The Kruskal-Wallis test](kw.qmd)
+4. [Friedman's ANOVA](friedman.qmd)
+
+
+## Continue Your Journey
+
+The next district is [Antevorta](antevorta.qmd)

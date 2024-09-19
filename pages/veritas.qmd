@@ -1,0 +1,15 @@
+---
+title: "Veritas (Advanced Topics)"
+---
+
+
+![](../images/veritas.png)
+
+Your journey is nearly over. You have reached Veritas, the final district. here you will find an assortment of topics at the more advance end of the statistical spectrum. The topics covered are:
+
+1. [Cluster Analysis](cluster.qmd): how do you cluster cases of data that have similar profiles of scores across several variables?
+2. [Exploratory Factor Analysis](efa.qmd): reducing variables into underlying dimensions, and reliability analysis
+3. [MANOVA](manova.qmd) or multivariate analysis of variance: predicting more than one continuous outcome from categorical of continuous predictor variables.
+4. [Meta-Analysis](meta.qmd): assimilating effects across studies.
+5. [Structural Equation Modelling](sem.qmd):
+

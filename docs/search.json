@@ -1,0 +1,870 @@
+[
+  {
+    "objectID": "posts/blog.html",
+    "href": "posts/blog.html",
+    "title": "Infrequent Random Thoughts",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Discovering statistics",
+    "section": "",
+    "text": "Welcome to Discovering Statistics. This website brings together many of my free resources to help you to get to grips with statistics. These include handouts, tutorials, extracts from my books, videos and blogs. It’s an adventure in statistics."
+  },
+  {
+    "objectID": "pages/discoverse.html",
+    "href": "pages/discoverse.html",
+    "title": "The discoverse",
+    "section": "",
+    "text": "The discover-verse (or discoverse for short) is a universe of websites the have resources to learn statistics using specific software apps. Each one is typically linked to one of my books. Click on the image to take you to the website\n\n\n\n\n\n\n\n\nJASP\n\n\n\n\n\n\n\nSPSS"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n[1] 2"
+  },
+  {
+    "objectID": "pages/ais.html#about",
+    "href": "pages/ais.html#about",
+    "title": "An adventure in Statistics",
+    "section": "About",
+    "text": "About\nWill Zach find Alice, the missing love of his life, and save the world? Will he survive the bridge of death? Can he escape the zombie horde? Statistically speaking the odds don’t look good…. Reluctant hero Zach Slade wakes up to find that his soul mate Alice has vanished. To find her, he must solve a puzzle using the only clue he has – Alice’s unfinished research report. If only he hadn’t skipped science class to form a band. The more Zach unravels the enigma of reality, the more he sense that something is very wrong. Did Alice ever exist? Who is the mysterious Professor Milton? What is causing people to forget who they are? And why is everyone intent on teaching him statistics? Join Zach on his bizarre journey … It will transform your understanding of statistics forever."
+  },
+  {
+    "objectID": "pages/ais.html#audience",
+    "href": "pages/ais.html#audience",
+    "title": "An adventure in Statistics",
+    "section": "Audience",
+    "text": "Audience\nThis book is aimed at people with no prior knowledge of statistics."
+  },
+  {
+    "objectID": "pages/ais.html#whats-it-about",
+    "href": "pages/ais.html#whats-it-about",
+    "title": "An adventure in Statistics",
+    "section": "What’s it about?",
+    "text": "What’s it about?\nAt a simple level ‘an adventure in statistics’ is a story about Zach searching for Alice, and seeking the truth, but it’s also about the unlikely friendship he develops with a sarcastic cat, it’s about him facing his fear of science and numbers, it’s about him learning to believe in himself. It’s a story about love, about not forgetting who you are. It’s about searching for the heartbeats that hide in the gaps between you and the people you love. It’s about having faith in others. Of course, it’s also about fitting models, robust methods, classical and Bayesian estimation, significance testing and whole bunch of other tedious statistical things, but hopefully you’ll be so engrossed in the story that you won’t notice them. Or they might be a welcome relief from the terrible fiction. Time will tell."
+  },
+  {
+    "objectID": "pages/ais.html#whats-the-difference-to-my-other-textbooks",
+    "href": "pages/ais.html#whats-the-difference-to-my-other-textbooks",
+    "title": "An adventure in Statistics",
+    "section": "What’s the difference to my other textbooks?",
+    "text": "What’s the difference to my other textbooks?\nMy Discovering Statistics Using … range focuses on doing statistics using specific software packages (e.g., IBM SPSS Statistics, R, SAS) and do not spend much time on introductory concepts. An Adventure in Statistics does the opposite: it teaches the foundations of statistics from the bottom up focusing on theory, concepts and interpretation rather than software packages (because my other books already do that). As such, it is complimentary to my other books: it provides the grass roots introduction to statistics that my other books do not have space to provide. I will be producing some free materials to accompany the book to show how to use (most likely R, IBM SPSS Statistics and, possible, JASP) to reproduce what is in the book."
+  },
+  {
+    "objectID": "pages/ais.html#awards",
+    "href": "pages/ais.html#awards",
+    "title": "An adventure in Statistics",
+    "section": "Awards",
+    "text": "Awards\n\n“It’s stupid, stupid words, stupid symbols and even more stupid pictures.” Zach Slade\n\n\n2023: APEX Award for Publication Excellence: Print Media - Education & Training\n2017: Shortlisted for the British Psychological Society Book Award\n2016: The Association of Learned & Professional Society Publishers Award for Innovation in Publishing\n2016: British Book Design and Production Awards (Primary, Secondary and Tertiary Education category)"
+  },
+  {
+    "objectID": "pages/ais.html#reviews",
+    "href": "pages/ais.html#reviews",
+    "title": "An adventure in Statistics",
+    "section": "Reviews",
+    "text": "Reviews\n\n” I have at last encountered a book that provides solid, innovative statistics instruction alongside lessons in coding. And it’s fair to say that it does so like no other … If only I’d had this book back in grad school.” American Scientist. Reviewed by Katie L. Burke.\n“Field has succeeded in bringing a refreshing new approach to learning statistical methods, in this easy-to-follow and engaging guide.” The Psychologist, Reviewed by Stacey A. Bedwell."
+  },
+  {
+    "objectID": "pages/ais.html#contents",
+    "href": "pages/ais.html#contents",
+    "title": "An adventure in Statistics",
+    "section": "Contents",
+    "text": "Contents\n\nChapter list\n\nChapter 1: Why you need science\nChapter 2: Reporting research, variables and measurement\nChapter 3: Summarizing Data\nChapter 4: Fitting models (central tendency)\nChapter 5: Presenting data\nChapter 6: z-scores\nChapter 7: Probability\nChapter 8: Inferential statistics\nChapter 9: Robust estimation\nChapter 10: Hypothesis testing\nChapter 11: Modern approaches to theory testing\nChapter 12: Assumptions\nChapter 13: Relationships\nChapter 14: The general linear model\nChapter 15: comparing two means\nChapter 16: Comparing several means\nChapter 17: Factorial designs\n\n\n\nAlphabetic list of selected topics covered\nANOVA (including robust methods and Bayesian approaches), assumptions (additivity, homoskedasticity, linearity, independent errors, normality etc.), bar charts, Bayes factors, Bayesian methods, Bayes theorem, bias (sources and correcting for it), boxplots, central limit theorem, chi-square test, confidence intervals, correlation (including robust methods and Bayesian approaches), effect sizes, Fisher’s exact test, frequency distributions, histograms, IQR, likelihood ratio, mean, median, meta-analysis, mode, null hypothesis significance testing (including power, Type I and II errors, error rates, criticisms), probability theory (classical and empirical), range, regression (including robust methods and Bayesian approaches), robust estimation, sampling theory, sampling distributions, scatterplots, standard deviation, standard error, t-tests (including robust methods and Bayesian approaches), variance, z-scores."
+  },
+  {
+    "objectID": "pages/ais.html#resources",
+    "href": "pages/ais.html#resources",
+    "title": "An adventure in Statistics",
+    "section": "Resources",
+    "text": "Resources\n\n“Sometimes you must trust that you have the ability to find the answers yourself” Milton\n\n\nA blog about the book\nCompanion website\nInteractive tutorials for R\nBuy from SAGE"
+  },
+  {
+    "objectID": "pages/blog.html",
+    "href": "pages/blog.html",
+    "title": "Infrequent Random Thoughts",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "pages/dsus.html",
+    "href": "pages/dsus.html",
+    "title": "Discovering Statistics Using IBM SPSS Statistics",
+    "section": "",
+    "text": "Winner of the British Psychological Society Book Award 2007"
+  },
+  {
+    "objectID": "pages/dsus.html#inspiring-quotes",
+    "href": "pages/dsus.html#inspiring-quotes",
+    "title": "Discovering Statistics Using IBM SPSS Statistics",
+    "section": "Inspiring quotes",
+    "text": "Inspiring quotes\nHere are some quotes from the publishers about various editions of the book:\n\n“In this brilliant new edition Andy Field has introduced important new introductory material on statistics that the student will need and was missing at least in the first edition. This book is the best blend that I know of a textbook in statistics and a manual on SPSS. It is a balanced composite of both topics, using SPSS to illustrate important statistical material and, through graphics, to make visible important approaches to data analysis. There are many places in the book where I had to laugh, and that’s saying a lot for a book on statistics. His excellent style engages the reader and makes reading about statistics fun’” - David C Howell, Professor Emeritus, University of Vermont\n“The new edition of Field’s textbook confirms its place as the best statistics text for undergraduate social science students. It provides support for those less confident about statistical analysis whilst having sufficient depth that it will still be valuable to more mathematically experienced people. There is a focus throughout on the practical aspects of data analysis and interpretation whilst at the same time emphasizing the importance of rigour and a good understating of theory essential reading” Dr Ian Walker, Department of Psychology, University of Bath"
+  },
+  {
+    "objectID": "pages/dsus.html#description",
+    "href": "pages/dsus.html#description",
+    "title": "Discovering Statistics Using IBM SPSS Statistics",
+    "section": "Description",
+    "text": "Description\nThis is what the publishers, SAGE, have to say on their web site (I don’t write this guff …):\n\nWith its unique combination of humour and step-by-step instruction, this award-winning book is the statistics lifesaver for everyone. From initial theory through to regression, factor analysis and multilevel modelling, Andy Field animates statistics and SPSS software with his famously bizarre examples and activities.\nFeatures:\n\nFlexible coverage to support students across disciplines and degree programmes\nCan support classroom or lab learning and assessment\nAnalysis of real data with opportunities to practice statistical skills\nHighlights common misconceptions and errors\nA revamped online resource that uses video, case studies, datasets, testbanks and more to help students negotiate project work, master data management techniques, and apply key writing and employability skills\nCovers the range of versions of IBM SPSS Statistics©.\n\nAll the online resources above (video, case studies, datasets, testbanks) can be easily integrated into your institution’s virtual learning environment or learning management system. This allows you to customize and curate content for use in module preparation, delivery and assessment."
+  },
+  {
+    "objectID": "pages/dsus.html#new-to-the-6th-edition",
+    "href": "pages/dsus.html#new-to-the-6th-edition",
+    "title": "Discovering Statistics Using IBM SPSS Statistics",
+    "section": "New to the 6th Edition",
+    "text": "New to the 6th Edition\nEvery chapter has had a thorough edit/rewrite. First of all, a few general things across chapters:\n\nIBM SPSS compliance: This edition was written using version 29 of IBM SPSS Statistics. IBM release new editions of SPSS Statistics more often than I bring out new editions of this book, so, depending on when you buy the book, it may not reflect the latest version. This shouldn’t worry you because the procedures covered in this book are unlikely to be affected (see Section 4.2).\nTheory: Chapter 6 was completely rewritten to be the main source of theory for the general linear model (although I pre-empt this chapter with gentler material in Chapter 2). In general, whereas I have shied away from being too strict about distinguishing parameters from their estimates, my recent teaching experiences have convinced me that I can afford to be a bit more precise without losing readers.\nEffect sizes: IBM SPSS Statistics will now, in some situations, produce Cohen’s d so there is less ‘hand calculation’ of effect sizes in the book, and I have tended to place more emphasis on partial eta-square in the general linear model chapters.\n\nHere is a chapter-by-chapter run down of the more substantial changes:\n\nChapter 1 (Doing research): tweaks, not substantial changes.\nChapter 2 (Statistical theory): I expanded the section on null hypothesis significance testing to include a concrete example of calculating a p-value. I expanded the section on estimation to include a description of maximum likelihood. I expanded the material on probability density functions.\nChapter 3 (Current thinking in statistics): The main change is that I rewrote the section on the intentions of the researcher and p-values to refer back to the new example in Chapter 2. I hope this makes the discussion more concrete.\nChapter 4 (IBM SPSS Statistics): Obviously reflects changes to SPSS since the previous edition. I expanded the sections on currency variables and data formats, and changed the main example in the chapter. The introduction of the workbook format now means the chapter has sections on using SPSS in both classic and workbook mode. The structure of the chapter has changed a bit as a result.\nChapter 5 (visualizing data): No substantial changes, I tweaked a few examples.\nChapter 6 (Bias and model assumptions): This chapter was entirely rewritten. It now does the heavy lifting of introducing the linear model. The first half of the chapter includes some more technical material (which can be skipped) on assumptions of ordinary least squares estimation. I removed most of the material on the split file command and frequencies to focus more on the explore command.\nChapter 7 (Nonparametric models): No substantial changes to content other than updates to the SPSS material (which has changed quite a bit).\nChapter 8 (Correlation): Lots changed in SPSS (e.g., you can obtain confidence intervals for correlations). I overhauled the theory section to link to the updated Chapter 6.\nChapter 9 (The linear model): Some theory moved out into Chapter 6, so this chapter now has more focus on the ‘doing’ than the theory.\nChapter 10 (t-tests): I revised some theory to fit with the changes to Chapter 6.\nChapter 11 (Mediation and moderation): I removed the section on dummy variables and instead expanded the section on dummy coding in Chapter 12. Removing this material made space for a new example using two mediators. I updated all the PROCESS tool material.\nChapters 12 (GLM 1): I expanded the section on dummy coding (see previous chapter). The effect size material is more focused on partial eta-squared.\nChapter 13 (GLM 2): I framed the material on homogeneity of regression slopes more in terms of fitting parallel slopes and non-parallel slopes models in an attempt to clarify what assumptions we are and are not making with ANCOVA models. I expanded the section on Bayesian models.\nChapter 14 (GLM 3): I restructured the theoretical material on interactions and simple effects to bring it to the front of the chapter (and to link back to Chapter 11). In SPSS you can now run simple effects through dialog boxes and perform post hoc tests on interactions, so I replaced the sections on using syntax and expanded my advice on using these methods. I removed the Labcoat Leni section based on work by Nicolas Guéguen because of concerns that have been raised about his research practices and the retraction of some of his other studies.\nChapter 15 (GLM 4): I changed both examples in this chapter (so it’s effectively a complete rewrite) to be about preventing an alien invasion using sniffer dogs.\nChapters 16–17 (GLM 5 and MANOVA): These chapters have not changed substantially.\nChapter 18 (Factor analysis): This chapter has had some theory added. In particular, I have added sections on parallel analysis (including how to conduct it). I have also expanded the reliability theory section. Although the examples are the same, the data file itself has changed (for reasons related to adding the sections on parallel analysis).\nChapters 19 (Categorical data): No major changes here.\nChapter 20 (Logistic regression): I have removed the section on multinomial logistic regression to make room for an expanded theory section on binary logistic regression. I felt like the chapter covered a lot of ground without actually giving students a good grounding in what logistic regression does. I had lots of ideas about how to rewrite the theory section, and I’m very pleased with it, but something had to make way. I also changed the second example (penalty kicks) slightly to allow me to talk about interactions in binary logistic regression and to reinforce how to interpret logistic models (which I felt was lacking in previous editions).\nChapter 21 (Multilevel models): Wow, this was a gateway to a very unpleasant dimension for me. This chapter is basically a complete rewrite. I expanded the theory section enormously and also included more practical advice. To make space the section on growth models was removed, but it’s fair to say that I think this version will give readers a much better grounding in multilevel models. The main example changed slightly (new data, but still on the theme of cosmetic surgery)."
+  },
+  {
+    "objectID": "pages/dsus.html#resources",
+    "href": "pages/dsus.html#resources",
+    "title": "Discovering Statistics Using IBM SPSS Statistics",
+    "section": "Resources",
+    "text": "Resources\n\nCompanion website for students\nCompanion website for instructors\nOrder from SAGE"
+  },
+  {
+    "objectID": "pages/dsur.html",
+    "href": "pages/dsur.html",
+    "title": "Discovering Statistics Using R and RStudio",
+    "section": "",
+    "text": "The first edition of this book is now quite out of date. The good news is that I’been working on an update for the past 4+ years! I hope to finish it soon."
+  },
+  {
+    "objectID": "pages/dsur.html#resources",
+    "href": "pages/dsur.html#resources",
+    "title": "Discovering Statistics Using R and RStudio",
+    "section": "Resources",
+    "text": "Resources\n\nCompanion website for students\nCompanion website for instructors old edition\nOrder from SAGE"
+  },
+  {
+    "objectID": "pages/dsur.html#the-second-edition",
+    "href": "pages/dsur.html#the-second-edition",
+    "title": "Discovering Statistics Using R and RStudio",
+    "section": "The second edition",
+    "text": "The second edition\nThe first edition of this book is now quite out of date. The good news is that I’been working on an update for the past 4+ years! I hope to finish it soon.\n\n\n\n\n\n\nIn the meantime, I have written a package of R tutorials the discovr package that contains a lot of the new material, and you can find out about the new edition at the companion website."
+  },
+  {
+    "objectID": "pages/spine.html#overview",
+    "href": "pages/spine.html#overview",
+    "title": "The SPINE of Statistics",
+    "section": "Overview",
+    "text": "Overview\nHaving been introduced to the idea that many common statistical tests are variations on a common theme (the linear model), the next topic looks at some specific statistical concepts that have relevance to this model. Although this is, of course, a vast oversimplification, if you understand the five concepts described in this tutorial then you have already grasped most of what you need to know to get going with analysing data with classical models. The five concepts are:\n\nParameters\nEstimation\nNull Hypothesis Significance Testing (NHST)\nInterval estimates (confidence intervals)\nStandard error\n\n\nR\n\nTutorial discovr_03 in the discovr package"
+  },
+  {
+    "objectID": "pages/spine.html#video-tutorials",
+    "href": "pages/spine.html#video-tutorials",
+    "title": "The SPINE of Statistics",
+    "section": "Video Tutorials",
+    "text": "Video Tutorials\n\nStandard error and confidence intervals\n\n\n\nNull hypothesis significance testing\n\n\n\nEffect sizes and Bayes factors"
+  },
+  {
+    "objectID": "pages/spine.html#continue-your-journey",
+    "href": "pages/spine.html#continue-your-journey",
+    "title": "The SPINE of Statistics",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/de_mystifying_statistics.html#overview",
+    "href": "pages/de_mystifying_statistics.html#overview",
+    "title": "De-mystifying statistics",
+    "section": "Overview",
+    "text": "Overview\nStatistics often seems like a whirring confusion of tests and procedures. However, many statistical models are variations on similar themes. Throughout my tutorials I try to focus on the commonalities between the models we fit. In this introductory tutorial I look at how lots of familiar tests are actually variations on one fairly straightforward idea: the linear model (you might have heard of it as regression). If you follow these tutorials you’ll hear a lot about the linear model! I also start the tutorial by looking at why now, more than ever, it’s important to have statistical skills to negotiate the modern world, and to enable you to look critically at the way data are manipulated by politicians and the media to suit their own agendas."
+  },
+  {
+    "objectID": "pages/de_mystifying_statistics.html#video-tutorial",
+    "href": "pages/de_mystifying_statistics.html#video-tutorial",
+    "title": "De-mystifying statistics",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nDe-Mystifying Statistics"
+  },
+  {
+    "objectID": "pages/de_mystifying_statistics.html#continue-your-journey",
+    "href": "pages/de_mystifying_statistics.html#continue-your-journey",
+    "title": "De-mystifying statistics",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/postverta.html#overview",
+    "href": "pages/postverta.html#overview",
+    "title": "Postverta (Foundational Statistics)",
+    "section": "Overview",
+    "text": "Overview\nYour journey through Elpis begins here in the district of Postverta. This district contains the foundations of statistics. There are three sections: the first looks at different software options, the next foundational statistical concepts such as fitting models and bias, as well as how to describe and present data; the final section looks at so-called nonparamatric tests (which have laregly been replaced by better methods).\n\nSoftware\nYou have lots of choices of software:\n\nIntroduction to IBM SPSS Statistics\nIntroduction to R\nIntroduction to JASP\n\n\n\nThe SPINE of Statistics\nThis section lays the foundations for all that is to follow. We look at some of the key concepts in statistics as well as writing up and presenting data. The topics covered are:\n\nDemystifying statistics: Why do we need statistics and is it as complicated as it seems?\nThe SPINE of Statistics: a cheeky look at five key concepts in statistics (parameters, estimation, null hypothesis significance testing (NHST), confidence intervals, and the standard error)\nBias in statistical models: a look at the key assumptions of the linear model and how they might bias models (homogeneity of variance, the central limit theorem, normality, outliers and shit like that).\nData visualisation: a look at presenting data and writing up research.\nSummarizing data: a look at describing data.\nz-scores and probability: because what’s not fun about probability?\nAssociations/correlation (relationships between variables): looking at relationships between variables\n\n\n\nNonparametric statistics\nNon-parametric tests are a groups of tests that are so-called ‘assumption free’ (although strictly speaking this isn’t true. These tests are often taught but in the modern computing age there are more sophisticated ways of obtaining robust models. I include some very out-of-date historical material in this section just for the hell of it, but you can skip this part without needing to lose sleep. Topics covered are:\n\nMann-Whitney Test\nWilcoxon Signed Rank Test\nThe Kruskal-Wallis test\nFriedman’s ANOVA"
+  },
+  {
+    "objectID": "pages/postverta.html#continue-your-journey",
+    "href": "pages/postverta.html#continue-your-journey",
+    "title": "Postverta (Foundational Statistics)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nThe next district is Antevorta"
+  },
+  {
+    "objectID": "pages/intro_r.html#overview",
+    "href": "pages/intro_r.html#overview",
+    "title": "Introduction to R, RStudio and Quarto",
+    "section": "Overview",
+    "text": "Overview\nR is a free software environment for statistical computing and graphics. It is what’s known as ‘open source’, which means that unlike commercial software companies that protectively hide away the code on which their software is based, the people who developed R allow everyone to access their code. This open source philosophy allows anyone, anywhere to contribute to the software. Consequently, the capabilities of R dynamically expand as people from all over the world add to it. In essence, R exists as a base package with a reasonable amount of functionality. Once you have downloaded R and installed it on your own computer, you can start doing some data analysis and graphs. However, the beauty of R is that it can be expanded by downloading packages that add specific functionality to the program. Commands in R are generally made up of two parts: objects and functions. These are separated by &lt;-, which you can think of meaning ‘is created from’. As such, the general form of a command is:\nWhich means the object called name_of_object is created from the function that goes by the name of the_function_I_want_to_use. An object is anything created in R. It could be a variable, a collection of variables, a statistical model etc. Objects can be single values (such as the mean of a set of scores) or collections of information; for example, when you run an analysis, you create an object that contains the output of that analysis, which means that this object contains many different values and variables. Functions are the things that you do in R to create your objects.\nThe best way to learn R (in my opinion) is to install and work through one my packages of interactive tutorials. The adventr package aligns to the material in An Adventure in Statistics whereas the discovr package aligns to the material in Discovering Statistics Using R and RStudio. If you don’t own either of these books use the discovr package."
+  },
+  {
+    "objectID": "pages/intro_r.html#interactive-tutorials-to-learn-r",
+    "href": "pages/intro_r.html#interactive-tutorials-to-learn-r",
+    "title": "Introduction to R, RStudio and Quarto",
+    "section": "Interactive tutorials to learn R",
+    "text": "Interactive tutorials to learn R\n\nThe discovr package\nThe adventr package"
+  },
+  {
+    "objectID": "pages/intro_r.html#video-tutorials",
+    "href": "pages/intro_r.html#video-tutorials",
+    "title": "Introduction to R, RStudio and Quarto",
+    "section": "Video tutorials",
+    "text": "Video tutorials\nGetting Started in R\nTo help you set up and work with R I recommend working through these video tutorials, which introduce you to the workflow in RStudio cloud, and give you a tour of the RStudio app.\nWorkflow in Posit (RStudio) Cloud\n\nCustomizing RStudio cloud\n\nQuarto\nQuarto is used to create documents in RStudio. It combines standard word processing (similar to apps that you might already use such as MS Word) with coding to produce documents in which you integrate data processing, data visualisation, statistical modelling and interpretation. This series of videos helps you to get started using Quarto.\nQuarto visual editor [Part 1]\n\nQuarto visual editor [Part 2]\n\nQuarto visual editor [Part 3]\n\nQuarto visual editor [Part 4]\n\nQuarto visual editor [Part 5]\n\nLaTeX equations\n\nInteracting with R\nThis series of videos looks at the basic principles of writing code in R and how to integrate R code into a Quarto document.\nCoding in RStudio visual editor [Part 1]\nThis video looks at how to create objects and the structure of commands in R (i.e. the assignment operator, &lt;-).\n\nlow=“accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture”&gt;\n\nCoding in RStudio visual editor [Part 2]\nThis video looks at what a function in R is, what an R package is, and how to install and use them. We look specifically at the here() function to give us a filepath.\n\nCoding in RStudio visual editor [Part 3]\nThis tutorial explores using the pipe operator to combine functions together.\n\nCoding in RStudio visual editor [Part 4]\nThis tutorial explores tibbles and how to render them using the kable() function.\n\nCoding in RStudio visual editor [Part 5]\nThis tutorial revisits functions to look at what arguments within functions do. We also find out how energetic Iron Maiden songs are on average.\n\nCoding in RStudio visual editor [Part 6]\nThis tutorial explores how code chunks are rendered in quarto documents and offers some tips on debugging errors when rendering goes wrong."
+  },
+  {
+    "objectID": "pages/intro_r.html#continue-your-journey",
+    "href": "pages/intro_r.html#continue-your-journey",
+    "title": "Introduction to R, RStudio and Quarto",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/intro_spss.html#overview",
+    "href": "pages/intro_spss.html#overview",
+    "title": "Introduction to IBM SPSS Statistics",
+    "section": "Overview",
+    "text": "Overview\nIBM SPSS Statistics is one of the most widely used statistical software packages in the world. If you did a social science degree then there’s a good chance you were taught it. This pages has some resources to get you started.\n\nAn old handout on the IBM SPSS Statistics environment, including entering data and some basic graphs\nData for Discovering Statistics using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/intro_spss.html#video-tutorials",
+    "href": "pages/intro_spss.html#video-tutorials",
+    "title": "Introduction to IBM SPSS Statistics",
+    "section": "Video Tutorials",
+    "text": "Video Tutorials\n\nEntering Data\n\n\n\nThe Viewer Window\n\n\n\nThe Syntax Window\n\n\n\nSelecting Cases\n\n\n\nExporting SPSS Output to MS Word\n\n\n\nImporting Excel Files"
+  },
+  {
+    "objectID": "pages/intro_spss.html#continue-your-journey",
+    "href": "pages/intro_spss.html#continue-your-journey",
+    "title": "Introduction to IBM SPSS Statistics",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/data_viz.html#overview",
+    "href": "pages/data_viz.html#overview",
+    "title": "Data visualization",
+    "section": "Overview",
+    "text": "Overview\nThis tutorial takes a breather from the linear model to look at presenting data and writing up research. We look at bar graphs, histograms, box-plots and line graphs. We also take a look at the format of research reports (i.e. journal articles) and how to prepare a report (based loosely on APA format, which is a popular style convention in Psychology journals).\n\nIBM SPSS Statistics\n\nA really old handout on plots using IBM SPSS Statistics\nAnother old handout that includes material on histograms using IBM SPSS Statistics\nEditing plots in SPSS\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorials discovr_02 and discovr_05 in the discovr package\nTutorials adventr_03 and adventr_05 in the adventr package\n\n\n\nWriting up research (APA style)\n\nHandout on APA style"
+  },
+  {
+    "objectID": "pages/data_viz.html#video-tutorials",
+    "href": "pages/data_viz.html#video-tutorials",
+    "title": "Data visualization",
+    "section": "Video Tutorials",
+    "text": "Video Tutorials\n\nEditing plots in IBM SPSS Statistics\n\n\n\nWriting up research APA style (old)\nYou can tell how old this is because I’m wearing a foo fighters t-shirt. Haven’t listened to them in a long time.\n\n\n\nThe Bootstrap"
+  },
+  {
+    "objectID": "pages/data_viz.html#continue-your-journey",
+    "href": "pages/data_viz.html#continue-your-journey",
+    "title": "Data visualization",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/wilcoxon.html#overview",
+    "href": "pages/wilcoxon.html#overview",
+    "title": "Wilcoxon Signed-Rank Test",
+    "section": "Overview",
+    "text": "Overview\nThe Wilcoxon signed-rank test is a non-parametric test that looks for differences between two dependent samples. That is, it tests whether the populations from which two related samples are drawn have the same location. It is the non-parametric equivalents of the dependent (or matched-pairs) t-test.\n\n\n\n\n\n\nWarning\n\n\n\nThis test has been superseded by developments in robust statistical tests. It’s included here for historical reasons.\n\n\n\nIBM SPSS Statistics\n\nA really old handout on nonparametric tests using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/wilcoxon.html#video-tutorial",
+    "href": "pages/wilcoxon.html#video-tutorial",
+    "title": "Wilcoxon Signed-Rank Test",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial"
+  },
+  {
+    "objectID": "pages/wilcoxon.html#continue-your-journey",
+    "href": "pages/wilcoxon.html#continue-your-journey",
+    "title": "Wilcoxon Signed-Rank Test",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/kw.html#overview",
+    "href": "pages/kw.html#overview",
+    "title": "Kruskal-Wallis Test",
+    "section": "Overview",
+    "text": "Overview\nThe Kruskal-Wallis test is a non-parametric test of whether more than two independent groups differ. It is the non-parametric version of one-way independent ANOVA. That is, it tests whether the populations from which several independent samples are drawn have the same location.\n\n\n\n\n\n\nWarning\n\n\n\nThis test has been superseded by developments in robust statistical tests. It’s included here for historical reasons.\n\n\n\nIBM SPSS Statistics\n\nData for Discovering Statistics using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/kw.html#video-tutorial",
+    "href": "pages/kw.html#video-tutorial",
+    "title": "Kruskal-Wallis Test",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial"
+  },
+  {
+    "objectID": "pages/kw.html#continue-your-journey",
+    "href": "pages/kw.html#continue-your-journey",
+    "title": "Kruskal-Wallis Test",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/associations.html#overview",
+    "href": "pages/associations.html#overview",
+    "title": "Relationships between variables (correlation)",
+    "section": "Overview",
+    "text": "Overview\nThis tutorial takes a look at how to describe relationships between variables using the correlation coefficient. Essentially there are three well-known correlation coefficients. Pearson’s correlation coefficient, r (or Pearson’s product-moment correlation coefficient to give it its full name), is a standardized measure of the strength of relationship between two variables. It can take any value from −1 (as one variable changes, the other changes in the opposite direction by the same amount), through 0 (as one variable changes the other doesn’t change at all), to +1 (as one variable changes, the other changes in the same direction by the same amount). Spearman’s correlation coefficient is Pearson’s correlation coefficient performed on data that have been converted into ranked scores. By analyzing ranks it has less-restrictive assumptions than Pearson’s r. Finally, Kendall’s tau is a non-parametric correlation coefficient similar to Spearman’s correlation coefficient, but is preferred for small data sets with a large number of tied ranks.\n\nIBM SPSS Statistics\n\nAn old handout on correlation using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorials discovr_07 in the discovr package"
+  },
+  {
+    "objectID": "pages/associations.html#video-tutorials",
+    "href": "pages/associations.html#video-tutorials",
+    "title": "Relationships between variables (correlation)",
+    "section": "Video Tutorials",
+    "text": "Video Tutorials"
+  },
+  {
+    "objectID": "pages/associations.html#continue-your-journey",
+    "href": "pages/associations.html#continue-your-journey",
+    "title": "Relationships between variables (correlation)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/descriptives.html#overview",
+    "href": "pages/descriptives.html#overview",
+    "title": "Descriptive Statistics",
+    "section": "Overview",
+    "text": "Overview\nThis tutorial is a bit lacking at present! It will, in time (maybe), look at how to summarize data using measures of central tendency such as the mean, mode and median, and measures of dispersion such as variance, standard deviation and standard error. It will also look at confidence intervals. My books cover all of these topics beautifully by the way;-)\n\nIBM SPSS Statistics\n\nA really old handout on descriptives using IBM SPSS Statistics\nAnother on descriptives using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorials discovr_02 and discovr_03 in the discovr package\nTutorials adventr_03 in the adventr package\nData for An adventure in Statistics"
+  },
+  {
+    "objectID": "pages/descriptives.html#continue-your-journey",
+    "href": "pages/descriptives.html#continue-your-journey",
+    "title": "Descriptive Statistics",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/intro_jasp.html#overview",
+    "href": "pages/intro_jasp.html#overview",
+    "title": "Introduction to JASP",
+    "section": "Overview",
+    "text": "Overview\nJASP is a free, open-source, cross-platform package for statistical analysis developed at the University of Amsterdam (thanks to funding from the ERC grant Bayes or Bust! from the European Union). Compared to R, it is more user-friendly in that it offers a nice user-interface and real-time updating of output. Compared to SPSS, it’s focus on certain procedures makes it a bit less bewildering and it does Bayesian statistics as well as the classical tests that you are currently being taught, which trust me will be a major selling point in the not too distant future. .\n\nCompanion website for our book - not yet active\nGetting started in JASP"
+  },
+  {
+    "objectID": "pages/intro_jasp.html#continue-your-journey",
+    "href": "pages/intro_jasp.html#continue-your-journey",
+    "title": "Introduction to JASP",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNow we’ve looked at software the next stop is the SPINE of statistics.\nNext topic"
+  },
+  {
+    "objectID": "pages/z_scores.html#overview",
+    "href": "pages/z_scores.html#overview",
+    "title": "Z-scores and probability",
+    "section": "Overview",
+    "text": "Overview\nA z-score is the value of an observation expressed in standard deviation units. The sign of the score indicates whether it is above (positive) or below (negative) the mean, and the value quantifies how many standard deviations the score is from the mean. A z-score is calculated by taking the observation, subtracting from it the mean of all observations, and dividing the result by the standard deviation of all observations. By converting a distribution of observations into z-scores a new distribution is created that has a mean of 0 and a standard deviation of 1. This has several uses, but the main one is that it allows us to start mapping observed scores onto probability values. An Adventure in Statistics has a whole chapter on this topic. Classical probability is the theoretical probability of an event. For a given trial or set of trials, the classical probability of an event, assuming that all outcomes are equally likely, is the frequency of an event divided by the sample space, or total number of possible outcomes. For example, in my book An Adventure in Statistics, the main character, Zach contemplates crossing the bridge of death. There were two possible outcomes: he lives or dies. Therefore, the sample space for a single trial contains two events (alive or dead). Assuming these outcomes occur with equal frequency, then the classical probability of living is the frequency of living in the sample space (which is 1) divided by the total number of events in the sample space, 2. In other words, it is 0.5 or 50%. Compare this with empirical probability or the relative frequency. The empirical probability is the probability of an event based on the observation of many trials. Like classical probability, it is the frequency of an event divided by the sample space, but the frequency and sample space are determined by actual observations. For example, when Zach contemplated crossing the bridge of death in my book, there were two possible outcomes: he lives or dies. If he watched 10 people cross the bridge, and 7 of those people died, then the empirical probability of living is the frequency of living (the number of people he observed who survived, 3) divided by the sample space, which is the total number of observations he made, 10. In other words, it is 0.3 or 30%. Finally, conditional probability is the probability of an outcome given that some other outcome has already happened. For example, the probability that you are bored given that you have read this overview is a conditional probability, \\(p(boredom|read overview)\\).\n\nA handout on on using R to get z-scores\nA handout on using R to explore classical probability, empirical probability and conditional probability.\nData for An adventure in Statistics"
+  },
+  {
+    "objectID": "pages/z_scores.html#continue-your-journey",
+    "href": "pages/z_scores.html#continue-your-journey",
+    "title": "Z-scores and probability",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/friedman.html#overview",
+    "href": "pages/friedman.html#overview",
+    "title": "Friedman’s ANOVA",
+    "section": "Overview",
+    "text": "Overview\nFriedman’s ANOVA is a non-parametric test of whether more than two related groups differ. It is the non-parametric version of one-way repeated-measures ANOVA. That is, it tests whether the populations from which more than two related samples are drawn have the same location.\n\n\n\n\n\n\nWarning\n\n\n\nThis test has been superseded by developments in robust statistical tests. It’s included here for historical reasons.\n\n\n\nIBM SPSS Statistics\n\nData for Discovering Statistics using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/friedman.html#video-tutorial",
+    "href": "pages/friedman.html#video-tutorial",
+    "title": "Friedman’s ANOVA",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial"
+  },
+  {
+    "objectID": "pages/friedman.html#continue-your-journey",
+    "href": "pages/friedman.html#continue-your-journey",
+    "title": "Friedman’s ANOVA",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nWell done, you have completed this district. The next district is Antevorta"
+  },
+  {
+    "objectID": "pages/mann_whitney.html#overview",
+    "href": "pages/mann_whitney.html#overview",
+    "title": "Mann-Whitney Test",
+    "section": "Overview",
+    "text": "Overview\nThe Mann–Whitney test is a non-parametric test that looks for differences between two independent samples. That is, it tests whether the populations from which two samples are drawn have the same location. It is functionally the same as Wilcoxon’s rank-sum test, and both tests are non-parametric equivalents of the independent t-test.\n\n\n\n\n\n\nWarning\n\n\n\nThis test has been superseded by developments in robust statistical tests. It’s included here for historical reasons.\n\n\n\nIBM SPSS Statistics\n\nA really old handout on nonparametric tests using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/mann_whitney.html#video-tutorial",
+    "href": "pages/mann_whitney.html#video-tutorial",
+    "title": "Mann-Whitney Test",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial"
+  },
+  {
+    "objectID": "pages/mann_whitney.html#continue-your-journey",
+    "href": "pages/mann_whitney.html#continue-your-journey",
+    "title": "Mann-Whitney Test",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/bias.html#overview",
+    "href": "pages/bias.html#overview",
+    "title": "The beast of bias",
+    "section": "Overview",
+    "text": "Overview\nOK, so now you understand the key concepts of the linear model, it’s time to look at how models can be biased. Specifically, this tutorial looks at sources of bias such as outliers and violations of the assumptions of the model (homogeneity of variance, normality, and so on) and what effects these have on the key parts of the model that were covered in the previous tutorial (e.g., parameters, standard errors, confidence intervals, and significance tests). We will also look at some traditional ways to combat these problems (e.g., transforming data, bootstrapping and trimming).\n\nA really old handout on exploring data using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/bias.html#video-tutorials",
+    "href": "pages/bias.html#video-tutorials",
+    "title": "The beast of bias",
+    "section": "Video Tutorials",
+    "text": "Video Tutorials\n\nThe Beast of Bias\n\n\n\nThe central limit theorem (sort of)\n\n\n\nThe Bootstrap"
+  },
+  {
+    "objectID": "pages/bias.html#continue-your-journey",
+    "href": "pages/bias.html#continue-your-journey",
+    "title": "The beast of bias",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/moderation.html#overview",
+    "href": "pages/moderation.html#overview",
+    "title": "Categorical Predictors and Moderation",
+    "section": "Overview",
+    "text": "Overview\nIn the previous two tutorials we looked at how to apply the linear model using continuous predictor variables. We move on now to explore what happens when we use categorical predictors, and the concept of moderation. Moderation occurs when the relationship between two variables changes as a function of a third variable. For example, the relationship between watching horror films (predictor) and feeling scared at bed time (outcome) might increase as a function of how vivid an imagination a person has (moderator).\n\nIBM SPSS Statistics\n\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_10 in the discovr package"
+  },
+  {
+    "objectID": "pages/moderation.html#video-tutorials",
+    "href": "pages/moderation.html#video-tutorials",
+    "title": "Categorical Predictors and Moderation",
+    "section": "Video Tutorials",
+    "text": "Video Tutorials\n\nCategorical Predictors and Moderation\n\n\n\nModeration using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/moderation.html#continue-your-journey",
+    "href": "pages/moderation.html#continue-your-journey",
+    "title": "Categorical Predictors and Moderation",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/mediation.html#overview",
+    "href": "pages/mediation.html#overview",
+    "title": "Mediation",
+    "section": "Overview",
+    "text": "Overview\nIf you have travelled through the district of Postverta you should, by now, understand the key concepts of the linear model. It’s time to put this knowledge into practice. This tutorial looks in more detail at the GLM as well as providing some practical examples of how to fit linear models to your data. It also extends the model to look at when you have more than one predictor variable (aka multiple regression).\n\nIBM SPSS Statistics\n\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_10 in the discovr package"
+  },
+  {
+    "objectID": "pages/mediation.html#video-tutorials",
+    "href": "pages/mediation.html#video-tutorials",
+    "title": "Mediation",
+    "section": "Video Tutorials",
+    "text": "Video Tutorials\n\nMediation using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/mediation.html#continue-your-journey",
+    "href": "pages/mediation.html#continue-your-journey",
+    "title": "Mediation",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nThe next district is Porus"
+  },
+  {
+    "objectID": "pages/glm.html#overview",
+    "href": "pages/glm.html#overview",
+    "title": "The General Linear Model",
+    "section": "Overview",
+    "text": "Overview\nIf you have travelled through the district of Postverta you should, by now, understand the key concepts of the linear model. It’s time to put this knowledge into practice. This tutorial looks in more detail at the GLM as well as providing some practical examples of how to fit linear models to your data. It also extends the model to look at when you have more than one predictor variable (aka multiple regression).\n\nIBM SPSS Statistics\n\nA really old handout on regression using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_08 in the discovr package\nTutorial adventr_14 in the adventr package"
+  },
+  {
+    "objectID": "pages/glm.html#video-tutorial",
+    "href": "pages/glm.html#video-tutorial",
+    "title": "The General Linear Model",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nGLM: Model fit and multiple predictors (multiple regression)"
+  },
+  {
+    "objectID": "pages/glm.html#continue-your-journey",
+    "href": "pages/glm.html#continue-your-journey",
+    "title": "The General Linear Model",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/porus.html#overview",
+    "href": "pages/porus.html#overview",
+    "title": "Porus (Comparing Means)",
+    "section": "Overview",
+    "text": "Overview\nCongratulations on safely negotiating two districts of Elpis. In Postverta we learnt the foundations and key concepts associated with the general linear model, then in Antevorta we looked at how we use this model to predict continuous outcomes from continuous predictor variables. You have now entered the district of Porus. This district is all about predicting a continuous outcome variable from categorical predictors. Many people tend to put these designs under a banner of ‘ANOVA’, but in fact they are all encapsulated by the general linear model. This section develops what you learned in the district to extend the general linear model, GLM to compare differences between means. The topics covered are:\n\nComparing two means: the t-test or predicting a continuous outcome from a variable with two categories\nComparing several independent means: predicting a continuous outcome from a variable with several independent categories\nAnalysis of Covariance: predicting a continuous outcome from a mix of categorical and continuous predictor variables\nFactorial designs: predicting a continuous outcome from a several categorical variables\nRepeated measures designs: predicting a continuous outcome from one or more variables containing dependent categories\nMixed designs: predicting a continuous outcome from at least one variable containing independent categories, and at least one variable containing dependent categories"
+  },
+  {
+    "objectID": "pages/porus.html#continue-your-journey",
+    "href": "pages/porus.html#continue-your-journey",
+    "title": "Porus (Comparing Means)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nThe next district is Egestes"
+  },
+  {
+    "objectID": "pages/antevorta.html#overview",
+    "href": "pages/antevorta.html#overview",
+    "title": "Antevorta (Predicting Continuous Outcomes)",
+    "section": "Overview",
+    "text": "Overview\nYou have now entered the district of Antevorta. This district is all about predicting variables that are continuous. We take what we have already learnt about the general linear model, GLM (or, regression as you might have heard it called) in the Postverta district and develop it. The GLM is in fact a flexible analytic tool that takes on many forms, for example ‘ANOVA’ which people often associate with comparing differences between means is a special case of the GLM (and is covered in the Porus district). For now, we will look at the GLM in more detail (with examples), how to use it, and what things bias it. The topics covered are:\n\nThe Linear Model: predicting continuous outcomes from continuous variables\nBias in linear models: taking what we learnt about bias in the Postverta district and applying it to concrete examples. We also look in more detail at bootstrapping.\nModeration and Categorical Predictors: this tutorial begins to look at how categorical predictors can be incorporated into the GLM as a pre-cursor to the next district, Porus.\nMediation: this tutorial extends the GLM to situations where we want to test for mediation."
+  },
+  {
+    "objectID": "pages/antevorta.html#continue-your-journey",
+    "href": "pages/antevorta.html#continue-your-journey",
+    "title": "Antevorta (Predicting Continuous Outcomes)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nThe next district is Porus"
+  },
+  {
+    "objectID": "pages/egestes.html",
+    "href": "pages/egestes.html",
+    "title": "Egestes (Predicting Categorical Outcomes)",
+    "section": "",
+    "text": "We’ve negotiated three districts so far, in Postverta we learnt the foundations and key concepts associated with the general linear model, then in Antevorta we looked at how we use this model to predict continuous outcomes from continuous predictor variables. Next, in Porus we saw how predictions can be made from categorical predictor variables too. Now we are in the district of Egestes, where we will begin to look at predicting categorical outcome variables (rather than the continuous ones we have looked at in the other districts). The topics covered are:"
+  },
+  {
+    "objectID": "pages/egestes.html#continue-your-journey",
+    "href": "pages/egestes.html#continue-your-journey",
+    "title": "Egestes (Predicting Categorical Outcomes)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nThe next district is Veritas"
+  },
+  {
+    "objectID": "pages/veritas.html",
+    "href": "pages/veritas.html",
+    "title": "Veritas (Advanced Topics)",
+    "section": "",
+    "text": "Your journey is nearly over. You have reached Veritas, the final district. here you will find an assortment of topics at the more advance end of the statistical spectrum. The topics covered are:\n\nCluster Analysis: how do you cluster cases of data that have similar profiles of scores across several variables?\nExploratory Factor Analysis: reducing variables into underlying dimensions, and reliability analysis\nMANOVA or multivariate analysis of variance: predicting more than one continuous outcome from categorical of continuous predictor variables.\nMeta-Analysis: assimilating effects across studies.\nStructural Equation Modelling:"
+  },
+  {
+    "objectID": "pages/glm_bias.html#overview",
+    "href": "pages/glm_bias.html#overview",
+    "title": "Bias in the General Linear Model",
+    "section": "Overview",
+    "text": "Overview\nIn the previous tutorial we looked at how to apply the linear model, and this tutorial goes on to look at how we explore bias in the model. It develops what we learnt about bias in the Postverta district and applies it to a concrete example. We also look in more detail at bootstrapping.\n\nIBM SPSS Statistics\n\nA really old handout on bias using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_06 in the discovr package"
+  },
+  {
+    "objectID": "pages/glm_bias.html#video-tutorial",
+    "href": "pages/glm_bias.html#video-tutorial",
+    "title": "Bias in the General Linear Model",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nThe beast of bias"
+  },
+  {
+    "objectID": "pages/glm_bias.html#continue-your-journey",
+    "href": "pages/glm_bias.html#continue-your-journey",
+    "title": "Bias in the General Linear Model",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/two_means.html#overview",
+    "href": "pages/two_means.html#overview",
+    "title": "Comparing Two Means",
+    "section": "Overview",
+    "text": "Overview\nIn Antevorta we looked at how we can incorporate categorical predictors into the linear model. When we do this the model parameters represent differences between means. A more traditional way to conceptualise this situation is the t-test. This tutorial looks at two variants of this test:\n\nThe independent t-test uses the t-statistic to establish whether two means collected from independent samples differ significantly.\nThe paired-samples t-test (aka the dependent t-test and the matched-pairs t-test) uses the t-statistic to establish whether two means collected from the same sample (or related observations) differ significantly.\n\nBoth of these tests are special cases of the GLM, but are often taught as independent entities, so this section is really just to tie in with how you might be taught. However, look back at the material in Antevorta to see how the same comparisons between means can be made within the framework of the linear model.\n\nIBM SPSS Statistics\n\nA really old handout using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_09 in the discovr package\nTutorial adventr_15 in the adventr package"
+  },
+  {
+    "objectID": "pages/two_means.html#video-tutorial",
+    "href": "pages/two_means.html#video-tutorial",
+    "title": "Comparing Two Means",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nCategorical predictors in the linear model\n\n\n\nT-Tests using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/two_means.html#continue-your-journey",
+    "href": "pages/two_means.html#continue-your-journey",
+    "title": "Comparing Two Means",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/mixed.html#overview",
+    "href": "pages/mixed.html#overview",
+    "title": "Mixed designs",
+    "section": "Overview",
+    "text": "Overview\nSometimes we have factorial designs in which one or more predictors has been manipulated using different participants (or whatever entities are being tested) and one or more predictors has been manipulated using the same participants (or entities). This is known as a mixed design. You can extend the hierarchical linear model (see the last tutorial) to incorporate predictors that have been measured with different entities. However, as with repeated measures designs, when the goal is to compare means people often apply a variant of this model that is often referred to as Mixed ANOVA. That’s the topic of this tutorial: we look at what a mixed design is and see how to apply the model.\n\nIBM SPSS Statistics\n\nAn old handout using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_15 in the discovr package"
+  },
+  {
+    "objectID": "pages/mixed.html#video-tutorial",
+    "href": "pages/mixed.html#video-tutorial",
+    "title": "Mixed designs",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nMixed designs"
+  },
+  {
+    "objectID": "pages/mixed.html#continue-your-journey",
+    "href": "pages/mixed.html#continue-your-journey",
+    "title": "Mixed designs",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nCongratulations, you have finished this district. It’s now time to move to the district of Egestes"
+  },
+  {
+    "objectID": "pages/factorial.html#overview",
+    "href": "pages/factorial.html#overview",
+    "title": "Bias in the General Linear Model",
+    "section": "Overview",
+    "text": "Overview\nIn Antevorta we looked at moderation: that is when the effect of one predictor on an outcome depends upon a second predictor. In experimental research, this might be when the effect of one predictor (representing a treatment, for example) on an outcome occurs only for certain groups of people. Imagine we had a pill that we believed would make you more confident. We gave one group of people the pill and another group a placebo. This is out first predictor variable: pill vs. placebo. Our outcome measure was a subjective rating of how confident the person felt in a series of interactions. However, these interactions different with respect to whether the interaction was with someone of the same sex or opposite. This is our second predictor variable. If it turns out that confidence ratings for those who had the pill than those that didn’t, then the pill seems to have increased confidence. However, if this difference is much stronger when interacting with people of the same sex then we have moderation: the pill improves confidence in one situation but not another: its effect depends on the second variable.\nThis scenario is a factorial design, and we can apply a linear model to look at these effects. When all predictors are categorical then people often label the model as factorial ANOVA even though it is just a particular case of the linear model. This tutorial looks at these factorial designs and gives you some practical experience of interpreting moderation effects (interactions between predictor variables).\n\nBy hand\n\nSimple effects analysis\n\n\n\nIBM SPSS Statistics\n\nA really old handout on factorial ANOVA using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_13 in the discovr package\nTutorial adventr_17 in the adventr package"
+  },
+  {
+    "objectID": "pages/factorial.html#video-tutorial",
+    "href": "pages/factorial.html#video-tutorial",
+    "title": "Bias in the General Linear Model",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nFactorial designs"
+  },
+  {
+    "objectID": "pages/factorial.html#continue-your-journey",
+    "href": "pages/factorial.html#continue-your-journey",
+    "title": "Bias in the General Linear Model",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/ancova.html#overview",
+    "href": "pages/ancova.html#overview",
+    "title": "Mixing categorical and continuous predictors (ANCOVA)",
+    "section": "Overview",
+    "text": "Overview\nIn Antevorta we looked at how we could incorporate categorical predictors into the linear model. Before that we spent some considerable time looking at continuous predictors. What happens when you have both? Not a lot really, you can add and subtract predictors from the model as you see fit (with relation to your specific research hypotheses).\nWhen the goal is to look at differences between group means while accounting for one or more other predictors that are continuous, people tend to refer to it as analysis of covariance or ANCOVA. However, as is becoming a familiar theme, this situation is just a particular case of the linear model that combines categorical and continuous predictors. This tutorial looks at this situation and gives you some practical experience.\n\nIBM SPSS Statistics\n\nA really old handout on bias using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_12 in the discovr package"
+  },
+  {
+    "objectID": "pages/ancova.html#video-tutorial",
+    "href": "pages/ancova.html#video-tutorial",
+    "title": "Mixing categorical and continuous predictors (ANCOVA)",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nComparing means adjusted for other predictors (analysis of covariance)\n\n\n\nANCOVA using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/ancova.html#continue-your-journey",
+    "href": "pages/ancova.html#continue-your-journey",
+    "title": "Mixing categorical and continuous predictors (ANCOVA)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/anova.html#overview",
+    "href": "pages/anova.html#overview",
+    "title": "Categorical predictors (One-way ANOVA)",
+    "section": "Overview",
+    "text": "Overview"
+  },
+  {
+    "objectID": "pages/anova.html#video-tutorial",
+    "href": "pages/anova.html#video-tutorial",
+    "title": "Categorical predictors (One-way ANOVA)",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nCategorical predictors in the linear model\n\n\n\nContrast coding"
+  },
+  {
+    "objectID": "pages/anova.html#continue-your-journey",
+    "href": "pages/anova.html#continue-your-journey",
+    "title": "Categorical predictors (One-way ANOVA)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/rm.html#overview",
+    "href": "pages/rm.html#overview",
+    "title": "Repeated measures designs",
+    "section": "Overview",
+    "text": "Overview\nSometimes we collect data using repeated measures designs in which observations of the same entities are made at different points in time. The linear model we have discussed up until this point doesn’t handle this kind of data. In fact, it assumes that scores on the outcome variable are independent (this will not be true when observations come from the same entities). What to do? In fact, the linear model can be expanded to look at repeated observations of the same entities (time series designs, longitudinal designs, repeated measures, growth models, whatever you choose to call them). What is applied is known as a multilevel model or hierarchical linear model. Essentially it’s a linear model, just a slightly more complicated one that factors in dependencies between observations. A special variant of this kind of model is a repeated measures ANOVA, which is comparable to a multilevel model but with the restrictive assumption of sphericity. Despite being less useful than the more versatile multilevel model framework, repeated measures ANOVA is often what gets taught, so here we are looking at it. This tutorial looks at repeated measures designs when your aim is to compare means, explains sphericity and has a look at applying the model to examples.\n\nBy hand\n\nRepeated measures ANOVA by hand\nWhat is Sphericity\n\n\n\nIBM SPSS Statistics\n\nA really old handout using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_14 in the discovr package"
+  },
+  {
+    "objectID": "pages/rm.html#video-tutorial",
+    "href": "pages/rm.html#video-tutorial",
+    "title": "Repeated measures designs",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nRepeated measures"
+  },
+  {
+    "objectID": "pages/rm.html#continue-your-journey",
+    "href": "pages/rm.html#continue-your-journey",
+    "title": "Repeated measures designs",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/log_reg.html#overview",
+    "href": "pages/log_reg.html#overview",
+    "title": "Logistic regression",
+    "section": "Overview",
+    "text": "Overview\nHaving travelled through the districts of Postverta, Antevorta and Porus you should be well versed in how you can use the general linear model to predict continuous outcome variables from categorical and continuous predictor variables. However, what happens if you want to predict categorical outcomes? This tutorial extends the general linear model to look at the situation where you want to predict membership of one of two categories, often called binary logistic regression. For example, imagine you wanted to look at what variables predict survival (or not) of crossing a bridge of death1. You are looking to predict survival or not (a binary outcome) and you might want to predict it from variables such as Intelligence (a continuous predictor), agility (also continuous), and perhaps species like whether the entity trying to cross the bridge is human or cat2.\n1 In my book, an adventure in statistics, the main character Zach has to travel across a bridge of death along which he faces various challenges that if he fails results in him being removed from the bridge in some painful, horrific and fatal way. If that doesn’t make you want to buy the book, nothing will.2 In the book Zach is accompanied by a sarcastic yet highly intelligent cat. Come on, what more do you want from a stats book?\nIBM SPSS Statistics\n\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_20 in the discovr package"
+  },
+  {
+    "objectID": "pages/log_reg.html#video-tutorial",
+    "href": "pages/log_reg.html#video-tutorial",
+    "title": "Logistic regression",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nLogistic regression"
+  },
+  {
+    "objectID": "pages/log_reg.html#continue-your-journey",
+    "href": "pages/log_reg.html#continue-your-journey",
+    "title": "Logistic regression",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nExcellent work, you have finished this district. It’s now time to move to the final district of Veritas"
+  },
+  {
+    "objectID": "pages/anova.html#overview-1",
+    "href": "pages/anova.html#overview-1",
+    "title": "Categorical predictors (One-way ANOVA)",
+    "section": "Overview",
+    "text": "Overview\nAnalysis of variance (ANOVA) is a statistical procedure that uses the F-ratio to test the overall fit of a linear model. In experimental research this linear model tends to be defined in terms of group means and the resulting ANOVA is therefore an overall test of whether group means differ. However, it is a special case of ordinary linear regression in which the outcome variable is continuous and the predictors are categorical. A one-way ANOVA implies a linear model in which a continuous variable is predicted from one categorical variable (of two or more categories). A one-way between-group ANOVA implies that the categorical predictor contains categories that are independent (that is scores in one category are unrelated to those in another). In experimental research this occurs when, for example, different entities are randomized to different experimental groups (a between-group design). If the F-test suggests that there are significant group differences (i.e. you can predict the outcome significantly from category membership) it is customary to follow-up the analysis with planned contrasts or post hoc tests.\n\nPlanned contrasts are a set of comparisons between group means that are constructed before the data are collected. These are theory-led comparisons and are based on the idea of partitioning the variance created by the overall effect of group differences into gradually smaller portions of variance. These tests have more power than post hoc tests.\nPost hoc tests are a set of comparisons between group means that were not thought of before data were collected. Typically these tests involve comparing the means of all combinations of pairs of groups. To compensate for the number of tests conducted, each test uses a strict criterion for significance. As such, they tend to have less power than planned contrasts. They are usually used for exploratory work for which no firm hypotheses were available on which to base planned contrasts.\n\n\nBy hand\n\nA really old handout on the theory\nWelch’s robust F\n\n\n\nIBM SPSS Statistics\n\nA really old handout on one-way ANOVA using IBM SPSS Statistics\nA really old handout on contrasts using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_11 in the discovr package\nTutorial adventr_16 in the adventr package"
+  },
+  {
+    "objectID": "pages/chi.html#overview",
+    "href": "pages/chi.html#overview",
+    "title": "Chi-Square Test",
+    "section": "Overview",
+    "text": "Overview\nOn our journey so far we have looked at variations on the linear model when the outcome variable that we want to predict is continuous. Sometimes, however, we want to predict outcomes that are categorical. For example, we might want to predict whether or not someone gets a disease. At a simple level this might entail looking at the relationships between categorical variables (for example, does smoking vs not correlate with getting the disease vs. not?). The chi-square statistic is used in a variety of situations, but one of them is to test whether two categorical variables forming a contingency table are associated. A contingency table displays the cross-classification of two or more categorical variables. The levels of each variable are arranged in a grid, and the number of observations falling into each category is noted in the cells of the table. For example, if we took the categorical variables of learning statistics (with two categories: being forced to learn it or not), and depression (with two categories: diagnosis or not), we could construct a table as below. This instantly tells us that 150 of 155 people who were made to learn statistics ended up with a diagnosis of depression, compared to only 48 of 471 people who did not learn statistics. A chi-square test would enable us to see whether this apparent relationship is statistically significant.\n\n\n\n\nDepression\n\n\nLearn Statistics\n\n\nNo Statistics\n\n\n\n\n\n\nDiagnosis\n\n\n150\n\n\n48\n\n\n\n\nNo Diagnosis\n\n\n5\n\n\n423\n\n\n\n\nTotal\n\n\n155\n\n\n471\n\n\n\n\n\nIBM SPSS Statistics\n\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_19 in the discovr package"
+  },
+  {
+    "objectID": "pages/chi.html#video-tutorial",
+    "href": "pages/chi.html#video-tutorial",
+    "title": "Chi-Square Test",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nThe Chi-Square Test Using IBM SPSS Statistics\n\n\n\nT-Tests using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/chi.html#continue-your-journey",
+    "href": "pages/chi.html#continue-your-journey",
+    "title": "Chi-Square Test",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/cluster.html#what-is-cluster-analysis",
+    "href": "pages/cluster.html#what-is-cluster-analysis",
+    "title": "Cluster analysis",
+    "section": "What is Cluster Analysis?",
+    "text": "What is Cluster Analysis?\nWe have already seen that we can use Factor Analysis to group variables according to shared variance. In factor analysis, we take several variables, examine how much variance these variables share, and how much is unique and then ‘cluster’ variables together that share the same variables. In short, we cluster together variables that look as though they explain the same variance. The example in my textbooks (Field 2025, 2024) measuring attitudes to SPSS or R, and the result of the factor analysis was to isolate groups of questions that seem to share their variance in order to isolate different dimensions of SPSS or R anxiety.\nWhy am I talking about factor analysis? Well, in essence, cluster analysis is a similar technique except that rather than trying to group together variables, we are interested in grouping cases Usually, in psychology at any rate, this means that we are interested in clustering groups of people. So, in a sense it’s the opposite of factor analysis: instead of forming groups of variables based on several people’s responses to those variables, we instead group people based on their responses to several variables.\nSo, as an example if we measured anal-retentiveness, number of friends and social skills we might find two distinct clusters of people: statistics lecturers (who score high on anal-retentiveness and low on number of friends and social skills) and students (who score low on anal-retentiveness and high on number of friends and social skills).\n\n\n\n\n\n\nSummary\n\n\n\nCluster Analysis is a way of grouping cases of data based on the similarity of responses to several variables."
+  },
+  {
+    "objectID": "pages/cluster.html#how-does-cluster-analysis-work",
+    "href": "pages/cluster.html#how-does-cluster-analysis-work",
+    "title": "Cluster analysis",
+    "section": "How Does Cluster Analysis Work?",
+    "text": "How Does Cluster Analysis Work?\nImagine a simple scenario in which we’d measured Zippy, Bungle and George’s (Figure 1) scores on my (fictional) SPSS Anxiety Questionnaire, SAQ (Field 2024).\n\n\n\n\n\n\nFigure 1: Zippy, Bungle and George\n\n\n\nThis questionnaire resulted in four factors: computing anxiety, statistics anxiety, maths anxiety and anxiety relating to evaluation from peers. Our three people fill out the questionnaire and from our factor analysis we get factor scores for each of these four components. As a simple measure of the similarity of their scores we could plot a line showing the relationship between their scores (Figure 2)\nLooking at Figure 2 it’s pretty clear that Zippy and George have a very similar pattern of responses across the four factors (in fact their lines are parallel, indicating that the relative difference in their scores across factors is the same). Bungle, however, has a very different set of responses. He has a very similar score to Zippy and George for the ‘peer evaluation’ factor but for the remaining three factors his scores are very different to the other two. Therefore, we could cluster Zippy and George together based on the fact that the profile of their responses is very similar."
+  },
+  {
+    "objectID": "pages/cluster.html#how-is-similarity-measured",
+    "href": "pages/cluster.html#how-is-similarity-measured",
+    "title": "Cluster analysis",
+    "section": "How is Similarity Measured?",
+    "text": "How is Similarity Measured?\nObviously, looking at graphs of responses if a very subjective way to establish whether two people have similar responses across variables. In addition, in situations in which we have hundreds of people and lots of variables, the graphs of responses that we plot would become very cumbersome and almost impossible to interpret. Therefore, we need some objective way to measure the degree of similarity between people’s scores across a number of variables. There are two types of measure: similarity coefficients and dissimilarity coefficients. Can you think of a measure of similarity of two variables that you’ve come across before (numerous times) that could be adapted to measure the similarity of people?\n\nCorrelation Coefficient, r\nThe correlation coefficient is a measure of similarity between two variables (it tells us whether as one variable changes the other changes by a similar amount). In theory, we could apply the correlation coefficient to two people rather than two variables to see whether the pattern of responses for one person is the same as the other. The correlation coefficient is a standardised measure and so it has the advantage that it is unaffected by dispersion differences across variables (in plain English this means that if the variables across which we’re comparing people are measured in different units the correlation coefficient will not be affected). However, there is a problem with using a simple correlation coefficient to compare people across variables: it ignores information about the elevation of scores. Therefore, although the correlation coefficient tells us whether the pattern of responses between people are similar, it doesn’t tell us anything about the distance between two people’s profiles.\nFigure 3 shows two examples of responses across the factors of the SAQ. In both diagrams the two people (Zippy and George) have similar profiles (the lines are parallel). Therefore, the resulting correlation coefficient for the two graphs would be identical (in fact, you’d get a perfect correlation of 1). However, the distance between the two profiles is much greater in the second graph (the elevation is higher). Therefore, it might be reasonable to conclude that the people in the first graph are more similar than the two in the second graph, yet the correlation coefficient is the same. As such, the correlation coefficient misses important information.\n\n\n\n\n\n\n\n\n\n\n\nEuclidean Distance, \\(d\\)\nAn alternative measure is the Euclidean distance. Euclidean distance is the geometric distance between two objects (or cases). Therefore, if we were to call George subject i and Zippy subject j, then we could express their Euclidean distance in terms of the following equation:\n\\[\nd_{ij} = \\sqrt{\\sum_{k = 1}^{p}{(x_{ik} - x_{jk})^2}}\n\\]\nThis equation means that we can discover the distance between Zippy and George by taking their scores on a variable, k, and calculating the difference. Now, for some variables Zippy will have a bigger score than George and for other variables George will have a bigger score than Zippy. Therefore, some differences will be positive and some negative. Eventually we want to add up the differences across a number of variables, and so if we have positive and negative difference they might cancel out. To avoid this problem, we simply square each difference before adding them up. OK, so far we’ve got Zippy and George’s scores for variable k and we’ve calculated the difference and squared it. All we do now is move onto the next variable and do the same. When we’ve done the same for every variable we add all of the differences up (it’s just like calculating the variance really). When we’ve added all of the squared differences we take the square root (because by squaring the differences we’ve changed the units of measurement to units2 and so by taking the square root we revert back to the original units of measurement).\nIn reality, the average Euclidean distance is used (so after summing the squared differences we simply divide by the number of variables) because it allows for missing data. With Euclidean distances the smaller the distance, the more similar the cases. However, this measure is heavily affected by variables with large size or dispersion differences. So, if cases are being compared across variables that have very different variances (i.e. some variables are more spread out than others) then the Euclidean distances will be inaccurate. As such it is important to standardise scores before proceeding with the analysis. Standardising scores is especially important if variables have been measured on different scales."
+  },
+  {
+    "objectID": "pages/cluster.html#creating-the-clusters",
+    "href": "pages/cluster.html#creating-the-clusters",
+    "title": "Cluster analysis",
+    "section": "Creating the Clusters",
+    "text": "Creating the Clusters\nOnce we have a measure of similarity between cases, we can think about ways in which we can group cases based on their similarity. There are several ways to group cases based on their similarity coefficients. Most of these methods work in a hierarchical way. The principle behind each method is similar in that it begins with all cases being treated as a cluster in its own right. Clusters are then merged based on a criterion specific to the method chosen. So, in all methods we begin with as many clusters as there are cases and end up with just one cluster containing all cases. By inspecting the progression of cluster merging it is possible to isolate clusters of cases with high similarity.\n\nSingle Linkage or SLINK (Nearest Neighbour)\nThis is the simplest method and so is a good starting point for understanding the basic principles of how clusters are formed (and the hierarchical nature of the process). The basic idea is as follows:\n\nEach case begins as a cluster.\nFind the two most similar cases/clusters (e.g. A & B) by looking at the similarity coefficients between pairs of cases (e.g. the correlations or Euclidean distances). The cases/clusters with the highest similarity are merged to form the nucleus of a larger cluster.\nThe next case/cluster to be merged with this larger cluster is the one with the highest similarity coefficient to either A or B.\nThe next case merged is the one with the highest similarity to A, B or C, and so on.\n\nFigure 4 shows how the simple linkage method works. If we measured 5 animals on their physical characteristics (colour, number of legs, eyes etc.) and wanted to cluster these animals based on these characteristics we would start with the two most similar animals. First, imagine the similarity coefficient as a vertical scale ranging from low similarity to high. In the simple linkage method, we begin with the two most similar cases. We have two animals that are very similar indeed (in fact they look identical). Their similarity coefficient is therefore high. A fork that splits at the point on the vertical scale representing the similarity coefficient represents the similarity between these animals. So, because the similarity is high the points of the fork are very long. This fork is (1) in the diagram.\nHaving found the first two cases for our cluster we look around for other cases. In this simple case there are three animals left. The animal chosen to next be part of the cluster is the one most similar to either one of the animals already in the cluster. In this case, there is an animal that is similar in all respects except that it has a white belly. The other two cases are less similar (because one is a completely different colour and the other is human!). The similarity coefficient of the chosen animal is slightly lower than for the first two (because it has a white belly) and so the fork (represented by a dotted line) divides at a lower point along the vertical scale. This stage is (2) in the diagram.\nHaving added to the cluster we again look at the remaining cases and assess their similarity to any of the three animals already in the cluster. There is one animal that is fairly similar to the animal just added to the cluster. Although it is a different colour, it has the same distinctive pattern on its belly. Therefore, this animal is added to the cluster on the basis of its similarity to the third animal in the cluster (even though it is relatively dissimilar to the other two animals). This is (3) in the diagram.\nFinally, there is one animal left (the human) who is dissimilar to all of the animals in the cluster, therefore, he will eventually be merged into the cluster, but his similarity score will be very low. There are several important points here. The first is that the process is hierarchical. Therefore, the results we get will very much depend on the two cases that we chose as our starting point. Second, cases in a cluster need only resemble one other case in the cluster, therefore, over a series of selections a great deal of dissimilarity between cases can be introduced. Finally, the diagram we’ve drawn connecting the cases is known as a dendrogram (or tree diagram). The output of a cluster analysis is in the form of this kind of diagram.\n\n\n\n\n\n\n\n\n\n\n\nComplete Linkage or CLINK (Furthest Neighbour)\nA variation on the simple linkage method is known as complete linkage (or the furthest neighbour). This method is the logical opposite to simple linkage. To begin with the procedure is the same as simple linkage in that initially we look for the two cases with the highest similarity (in terms of their correlation or average Euclidean distance). These two cases (A & B) form the nucleus of the cluster. The second step is where the difference in method is apparent. Rather than look for a new case that is similar to either A or B we look for a case that has the highest similarity score to both A and B. The case © with the highest similarity to both A and B is added to the cluster. The next case to be added to the cluster is the one with the highest similarity to A, B and C. This method reduces dissimilarity within a cluster because it is based on overall similarity to members of the cluster (rather than similarity to a single member of a cluster). However, the results will still depend very much on which two cases you take as your starting point.\n\n\nAverage (Between-Group) Linkage\nThis method is another variation on simple linkage. Again, we begin by finding the two most similar cases (based on their correlation or average Euclidean distance). These two cases (A & B) form the nucleus of the cluster. At this stage the average similarity within the cluster is calculated. To determine which case © is added to the cluster we compare the similarity of each remaining cases to the average similarity of the cluster. The next case to be added to the cluster is the one with the highest similarity to the average similarity value for the cluster. Once this third case has been added, the average similarity within the cluster is re-calculated. The next case (D) to be added to the cluster is the one most similar to this new value of the average similarity.\n\n\nWard’s Method\nThe linkage methods are all based on a similar principle: there is a chain of similarity leading to whether or not a case is added to a cluster. The rules governing this chain differ from one linkage method to another. A different approach is Ward’s method, which is considerably more complex than the simple linkage method. The aim in Ward’s method is to join cases into clusters such that the variance within a cluster is minimised. To do this, each case begins as its own cluster. Clusters are then merged in such a way as to reduce the variability within a cluster.To be more precise, two clusters are merged if this merger results in the minimum increase in the error sum of squares. Basically, this means that at each stage the average similarity of the cluster is measured. The difference between each cases within a cluster and that average similarity is calculated and squared (just like calculating a standard deviation). The sum of squared deviations is used as a measure of error within a cluster. A cases is selected to enter the cluster if it is the case whose inclusion in the cluster produces the least increase in the error (as measured by the sum of squared deviations)."
+  },
+  {
+    "objectID": "pages/cluster.html#limitations-of-cluster-analysis",
+    "href": "pages/cluster.html#limitations-of-cluster-analysis",
+    "title": "Cluster analysis",
+    "section": "Limitations of Cluster Analysis",
+    "text": "Limitations of Cluster Analysis\nThere are several things to be aware of when conducting cluster analysis:\n\nThe different methods of clustering usually give very different results. This occurs because of the different criterion for merging clusters (including cases). It is important to think carefully about which method is best for what you are interested in looking at.\nWith the exception of simple linkage, the results will be affected by the way in which the variables are ordered.\nThe analysis is not stable when cases are dropped: this occurs because selection of a case (or merger of clusters) depends on similarity of one case to the cluster. Dropping one case can drastically affect the course in which the analysis progresses.\nThe hierarchical nature of the analysis means that early ‘bad judgements’ cannot be rectified."
+  },
+  {
+    "objectID": "pages/cluster.html#cluster-analysis-using-ibm-spss-statistics",
+    "href": "pages/cluster.html#cluster-analysis-using-ibm-spss-statistics",
+    "title": "Cluster analysis",
+    "section": "Cluster Analysis using IBM SPSS Statistics",
+    "text": "Cluster Analysis using IBM SPSS Statistics\nWe’ll stick to a basic example. Imagine we wanted to look at clusters of cases referred for psychiatric treatment. We measured each subject on four questionnaires: Spielberger Trait Anxiety Inventory (STAI), the Beck Depression Inventory (BDI), a measure of Intrusive Thoughts and Rumination (IT) and a measure of Impulsive Thoughts and Actions (Impulse). The rationale behind this analysis is that people with the same disorder should report a similar pattern of scores across the measures (so the profiles of their responses should be similar). To check the analysis, we asked 2 trained psychologists to agree a diagnosis based on the DSM-IV. These data are in Figure 5 and in the file diagnosis.sav.\n\n\n\n\n\n\n\n\n\nThe first thing to note is that like factor analysis and regression, data for each variable is placed in a separate column. Therefore, each row of the Data Editor represents a single subject’s data.\n\nRunning the Analysis\nFigure 6 shows the main dialogue box for running cluster analysis. This dialogue box is obtained using the menu path Analyze &gt; Classify &gt; Hierarchical Cluster. Select the four diagnostic questionnaires from the list on the left-hand side and drag them to the box labelled Variables. The variable DSM is included in the data editor merely as a way of helping demonstrate what the output from a cluster analysis means, therefore, we do not need to include it in the analysis.\n\n\n\n\n\n\n\n\n\nIf you click on Statistics in the main dialog box then another dialog box appears (see Figure 7). The main use of this dialog box is in specifying a set number of clusters. By default, SPSS will merge all cases into a single cluster and it is down to the researcher to inspect the output to determine substantive sub-clusters. However, if you have a hypothesis about how many clusters should emerge, then you can tell SPSS to create a set number of clusters, or to create a number of clusters within a range. For this example, leave the default options as they are and proceed back to the main dialog box by clicking Continue.\n\n\n\n\n\n\n\n\n\nClick on Method … to access the dialog box in Figure 8. You use this dialog box to choose the method of creating clusters (some of which were described above). By default SPSS uses between-groups linkage (or average linkage) methods. However, several other options are available (e.g. nearest neighbour, furthest neighbour and Ward’s method). Each method can be selected by clicking on the down arrow where it says Cluster Method. For this analysis, I suggest choosing Ward’s method, but as practise I suggest coming back and trying some different methods: you’ll find you get very different results!\nUnderneath the method selection, there are a series of options depending on whether you’re analysing interval data (as we are here), frequency data (counts) or binary data (dichotomous variables with only two possible responses). Each of these types of data has an associated set of measures of similarity. Earlier I described Euclidean distances and the correlation coefficient. By default, SPSS uses Euclidean distances (which is a good option to use). However, you cans elect a different measure of similarity if required (see Romesburg 1984; Everitt et al. 2011 for detail of the possible methods).\nFinally, at the bottom of the dialog box is the option to standardise our data. I mentioned earlier that standardising data is a good idea (especially because some measures of similarity are sensitive to differences in the variance of variables) therefore I recommend this option. There are a number of ways in which data can be standardized but the most easily understood is to convert to a z-score. I suggest this option. It is possible to standardise either by variable, or across a particular case. When clustering cases (as we’re doing here, known as Q-analysis) we must standardise the variables. If we were trying to cluster variables (R-analysis) then we would need to standardise across cases. So, for this example, select z-scores for variables and proceed by clicking Continue.\n\n\n\n\n\n\n\n\n\nOnce back in the main dialog box, you can select the plots dialog box by clicking Plots … (Figure 9). There are two types of diagram that you can ask for from a cluster analysis. The default option is an icicle plot, but the most useful for interpretation purposes is the dendrogram. The dendrogram shows us the forks (or links) between cases and its structure gives us clues as to which cases form coherent clusters. Therefore, it’s essential to request this option. Once this option is selected, click on Continue.\n\n\n\n\n\n\n\n\n\nOnce back in the main dialog box, you can select the save dialog box by clicking Save …. This dialog box allows us to save a new variable into the data editor that contains a coding value representing membership to a cluster. As such, we can use this variable to tell us which cases fall into the same clusters. By default, SPSS does not create this variable. In this example, we’re expecting three clusters of people based on the DSM-IV classifications (GAD, depression and OCD) so we could select Single solution and then type 3 in the blank space (see Figure 10).\nIn reality, what we would normally do is to run the cluster analysis without selecting this option and then inspect the resulting dendrogram to establish how many substantive clusters lie within the data. Having done this, we could re-run the analysis, requesting that SPSS save coding values for the number of clusters that we identified.\n\n\n\n\n\n\n\n\n\n\n\nOutput from SPSS: The Dendrogram\nThe main part of the output from SPSS is the dendrogram (although ironically this graph appears only if a special option is selected). The dendrogram for the diagnosis data is presented in Figure 11.\nAs explained earlier, cluster analysis works upwards to place every case into a single cluster. Therefore, we end up with a single fork that subdivides at lower levels of similarity. For these data, the fork first splits to separate cases 1, 4, 7, 11, 13, 10, 12, 9, 15, & 2 from cases 5, 14, 6, 8, & 3. In actual fact, if you look at the DSM-IV classification for these subjects, this first separation has divided up GAD and Depression from OCD. This is likely to have occurred because both GAD and Depression patients have low scores on intrusive thoughts and impulsive thoughts and actions whereas those with OCD score highly on both measures. The second major division is to split one branch of this first fork into two further clusters. This division separates cases 1, 4, 7, 11 & 13 from 10, 12, 9, 15, & 2.\nLooking at the DSM classification this second split has separated GAD from Depression. In short, the final analysis has revealed 3 major clusters, which seem to be related to the classifications arising from DSM. As such, we can argue that using the STAI, BDI, IT and Impulse as diagnostic measures is an accurate way to classify these three groups of patients (and possibly less time consuming than a full DSM-IV diagnosis). Obviously these data are rather simplistic and have resulted in a very uncomplicated solution. In reality there is a lot subjectivity involved in deciding which clusters are substantive.\n\n\n\n\n\n\n\n\n\nHaving eyeballed the dendrogram and decided how many clusters are present it is possible to re-run the analysis asking SPSS to save a new variable in which cluster codes are assigned to cases (with the researcher specifying the number of clusters in the data). For these data, we saw three clear clusters and so we could re-run the analysis asking for cluster group codings for three clusters (in fact, I told you to do this as part of the original analysis). Figure 12 shows the resulting codes for each case in this analysis. It’s pretty clear that these codes map exactly onto the DSM-IV classifications. Although this example is very simplistic it shows you how useful cluster analysis can be in developing and validating diagnostic tools, or in establishing natural clusters of symptoms for certain disorders.\n\n\n\n\n\n\n\n\n\n\n\nFurther reading\n\n\n\n\n\n\nTip\n\n\n\nTry the books by\n\nAldenderfer and Blashfield (1984)\nEveritt et al. (2011)\nRomesburg (1984)\n\n\n\n\n\nExercise\nCluster analysis can also be used to look at similarity across variables (rather than cases). The data in the file clusterdisgust.sav are from Sarah Marzillier’s D.Phil1. research and show different aspects of disgust rated by many different people (each column represents some aspect of disgust — the variable labels show what each column represents). We could run a cluster analysis to see which aspects of disgust cluster together based on the similarity of people’s responses to them. Run a cluster analysis on these data but select Cluster Variables in the initial dialog box (see Figure 4). Which aspects of disgust cluster together?\n1 Thanks to Sarah Marzillier for letting me use her data as an example"
+  },
+  {
+    "objectID": "pages/cluster.html#continue-your-journey",
+    "href": "pages/cluster.html#continue-your-journey",
+    "title": "Cluster analysis",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/manova.html#overview",
+    "href": "pages/manova.html#overview",
+    "title": "MANOVA",
+    "section": "Overview",
+    "text": "Overview\nDuring our travels through the districts of Elpis we have looked at how one continuous variable can be predicted from continuous and categorical predictor variables. Multivariate analysis of variance, MANOVA, is family of models that extend these principles to predict more than one outcome variable."
+  },
+  {
+    "objectID": "pages/manova.html#video-tutorial",
+    "href": "pages/manova.html#video-tutorial",
+    "title": "MANOVA",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nMANOVA Using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/manova.html#continue-your-journey",
+    "href": "pages/manova.html#continue-your-journey",
+    "title": "MANOVA",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/sem.html#overview",
+    "href": "pages/sem.html#overview",
+    "title": "Structural Equation Modelling (SEM)",
+    "section": "Overview",
+    "text": "Overview\nStructural Equation Modelling (SEM) is an attempt to model causal relations between variables by including all variables that are known to have some involvement in the process of interest. Essentially it’s a big, fancy linear model that models lots of relationships between lots of variables and estimates the parameters of those relationships.\n\nTheory\n\nOverview of SEM"
+  },
+  {
+    "objectID": "pages/sem.html#continue-your-journey",
+    "href": "pages/sem.html#continue-your-journey",
+    "title": "Structural Equation Modelling (SEM)",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nCongratulations your journey is, for now, at an end."
+  },
+  {
+    "objectID": "pages/meta.html#overview",
+    "href": "pages/meta.html#overview",
+    "title": "Meta-analysis",
+    "section": "Overview",
+    "text": "Overview\nMeta-analysis: this is a statistical procedure for assimilating research findings. It is based on the simple idea that we can take effect sizes from individual studies that research the same question, quantify the observed effect in a standard way (using effect sizes) and then combine these effects to get a more accurate idea of the true effect in the population.\n\nFixed and random effect models\nBroadly speaking there are two flavours of the meta-analysis model, both of which are variations on the linear model. The first is the fixed-effects model, in which studies in the meta-analysis are assumed to be sampled from a population with a fixed effect size or one that can be predicted from a few predictors. In this model there is one source of ‘error’, which is sampling variation. Thinking about this in terms of a linear model we have\n\\[\n\\begin{aligned}\nd_k &= \\delta + \\varepsilon_k \\\\\n\\varepsilon &\\sim N(0, \\sigma^2)\n\\end{aligned}\n\\]\nIn other words, the effect size (Cohen’s d) in study k (denoted \\(d_k\\)) is ‘predicted from’ or ‘made up of’, the effect size (size of d) in the population, which we denote as \\(\\delta\\), plus some sampling error, denoted as \\(\\varepsilon_k\\) (the standard notation for linear models). The usual assumption applies that the model errors follow a normal distribution with a mean of 0 (i.e. on average the error is zero) and a variance denoted \\(\\sigma^2\\). In this model, the effect size in each study is assumed to have been generated from a single population with a single effect size and the only reason that effect sizes vary across studies is because of sampling variance. Spoiler alert, this conceptualization probably isn’t realistic [@field_is_2005].\nThe alternative is the random-effects model, in which studies in the meta-analysis are assumed to be sampled from different populations with effect sizes that themselves vary. In this model there are two sources of ‘error’: (1) sampling variation (denoted as \\(\\varepsilon_k\\)); (2) variation between the true (population) effect size from which studies are taken (denoted as \\(\\zeta_k\\)). In terms of a linear model we have\n\\[\n\\begin{aligned}\nd_k &= \\delta_k + \\varepsilon_k \\\\\n\\delta_k &= \\theta + \\zeta_k\\\\\n\\varepsilon &\\sim N(0, \\sigma^2) \\\\\n\\zeta &\\sim N(0, \\tau^2)\n\\end{aligned}\n\\]\nThe first line looks the same as the first line of the previous model except that the population effect size has acquired a subscript of \\(k\\). This difference is important and reflects the fact that in the random-effects model effect sizes within studies are not assumed to reflect a single population effect size but are instead assumed to have come from a population with an effect size that is different to the populations from which other studies in the meta-analysis were sampled. So now, the effect size in study k is made up of the effect size in population k plus some sampling error. The second line tells us that the population effect size for study k (\\(\\delta_k\\)) is made up of the true effect size (\\(\\theta\\)) and sampling error at the population level \\(\\zeta_k\\). The population-level sampling error is assumed to be normally distributed with a mean of 0 (i.e. on average the error is zero) and a variance denoted \\(\\tau^2\\). The random effects model can, therefore be thought of in terms of effect sizes within studies being sampled from populations which themselves are sampled from a ‘superpopulation’ that has a fixed effect size that represents the ‘true’ effect size of interest.\nThis model can be thought of as a hierarchical model with two levels of the hierarchy.\n\nThe level 1 (participant level) model\nIgnoring the distributions of errors to simplify things, at level 1 (the bottom level) we have the participant-level model in which effect sizes for study \\(k\\) are predicted from the effect size in the corresponding population and some sampling variation (at the sample level).\n\\[\n\\begin{aligned}\nd_k &= \\delta_k + \\varepsilon_k \\\\\n\\end{aligned}\n\\]\n\n\nThe level 2 (study level) model\nAt level 2 (the top level) we have the study-level model in which effect sizes for population \\(k\\) is predicted from the true effect size and some sampling variation (at the population level).\n\\[\n\\begin{aligned}\n\\delta_k &= \\theta + \\zeta_k\\\\\n\\end{aligned}\n\\]\n\n\nThe composite model\nRather than spread the model across two lines, we can equivalently write it as:\n\\[\n\\begin{aligned}\nd_k &= \\theta + \\zeta_k + \\varepsilon_k \\\\\n\\varepsilon &\\sim N(0, \\sigma^2) \\\\\n\\zeta &\\sim N(0, \\tau^2)\n\\end{aligned}\n\\]\n\n\n\n\n\n\nNote\n\n\n\nThe primary role of meta-analysis is, therefore, to use the data from many studies to estimate the population effect size. This estimate (\\(\\hat{\\theta}\\)) is assumed to reflect the true size of the effect of interest.\n\n\n\n\n\nModerators of effect sizes\nIn the previous section, we saw that the effect size for a study can be expressed as a linear model. In that model, the effect size is predicted from the population effect size and some sources of sampling variation. In effect these models are ‘intercept-only’ models. That is, the effect size for a study is predicted from only the intercept (i.e. an estimate of the true effect size). However, familiarity with linear models tells us that the basic meta-analytic model could be extended to include any number of predictors. Each predictor would be added to the model, and would be assigned a parameter that is estimated form the data. These parameters quantify the size and direction of the relationship between each predictor and the size of effect. In general, if we denote predictors with \\(X\\) and their parameters with \\(\\beta\\) (i.e. commonly-used symbols for linear models), we can use the data to estimate a model that includes predictors:\n\\[\n\\begin{aligned}\nd_k &= \\theta + \\beta_1X_k + \\beta_2X_k + \\ldots + \\beta_nX_k + \\zeta_k + \\varepsilon_k \\\\\n\\varepsilon &\\sim N(0, \\sigma^2) \\\\\n\\zeta &\\sim N(0, \\tau^2)\n\\end{aligned}\n\\]\nPredictors/moderators can be continuous or categorical variables. When a moderator is made up of several categories then it’s possible to use any of the standard coding schemes such as dummy coding, contrast coding and so on. In this tutorial we use an example of dummy coding.\n\n\n\n\n\n\nNote\n\n\n\nA secondary role of meta-analysis is to test predictions that the size of effect will be associated with specific predictors relating to things like sample and methodological characteristics.\n\n\n\n\nMultiple effect sizes within studies\nIt is the norm rather than the exception that studies contribute more than one effect size to a meta-analysis. For example, the outcome of interest might have been measured using different questionnaires yielding a different effect sizes for each measure. Clinical trials often use multiple control groups yielding different effect sizes for the intervention group compared to each of the controls.\nWe can handle this situation by adding a middle level to our hierarchy which acknowledges that effect sizes are clustered within studies.\n\nThe level 1 (participant level) model\nAt level 1 (the bottom level) we again have the participant level model in which effect sizes for study \\(k\\) are predicted from the effect size in the corresponding population and some sampling variation (at the sample level). This main difference from the random-effects model is that there are now two subscripts to acknowledge that each effect size j is nested within study k. In other words, it acknowledges the presence of an extra level in the hierarchy.\n\\[\n\\begin{aligned}\nd_{jk} &= \\delta_{jk} + \\varepsilon_{jk} \\\\\n\\end{aligned}\n\\]\n\n\nThe level 2 (within study level) model\nAt level 2 (the middle level) we have the within-study model which acknowledges that each population effect size associated with effect size j within study k (\\(\\delta_{jk}\\)) is itself made up of the effect size for the associated population, \\(\\kappa_k\\) and some sampling error (denoted as \\(\\zeta_{(2)jk}\\) where the 2 tells us this is the error at level 2).\n\\[\n\\begin{aligned}\n\\delta_{jk} &= \\kappa_k + \\zeta_{(2)jk}\\\\\n\\end{aligned}\n\\]\nNote that \\(\\kappa_k\\) does not have a j subscript because all of the j effect sizes within a study have the same population and, therefore, the same population effect size. However, different studies (and, remember, k denotes studies) have the same population and, therefore, the same population effect size so \\(\\kappa\\) varies across studies (k) but not across effect sizes within a study (i).\nThe sampling error (denoted as \\(\\zeta_{(2)jk}\\)) is assumed to be normally distributed with a mean of 0 and variance that we will denote as \\(\\sigma^2_w\\) with the w reminding us that this is within-study sampling error. The sampling error (\\(\\zeta_{(3)k}\\)) reflects sampling variation across both effect sizes and studies and so has both j and k as subscripts.\n\n\nThe level 3 (between-study level) model\nAt level 3 (the top level) we have the study-level model in which effect sizes for population \\(k\\) are predicted from the true effect size (\\(\\theta\\)) and some sampling variation (at the population level).\n\\[\n\\begin{aligned}\n\\kappa_k &= \\theta + \\zeta_{(3)k}\\\\\n\\end{aligned}\n\\]\nNote that \\(\\theta\\) has no subscripts because it is fixed (it is the true effect size and does not vary by study k or by effect size j). The sampling error (denoted as \\(\\zeta_{(3)k}\\)) is assumed to be normally distributed with a mean of 0 and variance that we will denote as \\(\\sigma^2_b\\) with the b reminding us that this is between-study sampling error. The sampling error (\\(\\zeta_{(3)k}\\)) reflects sampling variation across studies and so has a k subscript.\n\n\nThe composite model\nRather than spread the model across three lines, we can equivalently write it as follows, with the bottom three lines explicitly describing the distributions of the error terms.\n\\[\n\\begin{aligned}\nd_{jk} &= \\theta + \\zeta_{(2)jk} + \\zeta_{(3)k} + \\varepsilon_{jk} \\\\\n\\varepsilon &\\sim N(0, \\sigma^2) \\\\\n\\zeta_{(2)} &\\sim N(0, \\sigma_w^2) \\\\\n\\zeta_{(3)} &\\sim N(0, \\sigma_b^2) \\\\\n\\end{aligned}\n\\]\nIn other words, effect size j within study k is made up of the true effect (\\(\\theta\\)) plus sampling variation at the participant level (\\(\\varepsilon_{jk}\\)), within each study (\\(\\zeta_{(2)jk}\\)) and across studies (\\(\\zeta_{(3)k}\\))\n\n\nModerators\nWithin this extended framework we can add moderators of effect sizes in the same way as described earlier but the moderators can operate at the study level (all effect sizes within a study have the same value for a particular model) in which case they will have a k subscript only, or they can operate at the effect size level (effect sizes within a study can have different values of the same moderator in which case they have a jk subscript.) For example,\n\\[\n\\begin{aligned}\nd_{jk} &= \\theta + \\beta_1X_k + \\beta_2X_k + \\ldots + \\beta_nX_k + \\zeta_{(2)jk} + \\zeta_{(3)k} + \\varepsilon_{jk} \\\\\n\\varepsilon &\\sim N(0, \\sigma^2) \\\\\n\\zeta_{(2)} &\\sim N(0, \\sigma_w^2) \\\\\n\\zeta_{(3)} &\\sim N(0, \\sigma_b^2) \\\\\n\\end{aligned}\n\\]\n\n\n\nIBM SPSS Statistics\n\nArticle I published on how to do a meta-analysis. Field, A. P., & Gillett, R. (2010). How to do a meta-analysis. British Journal of Mathematical & Statistical Psychology, 63(3), 665-694. doi:10.1348/000711010x502733\n\n\n\nR\n\nThe metahelpr package contains an interactive tutorial for conducting meta-analysis using R: https://github.com/profandyfield/metahelpr"
+  },
+  {
+    "objectID": "pages/meta.html#continue-your-journey",
+    "href": "pages/meta.html#continue-your-journey",
+    "title": "Meta-analysis",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  },
+  {
+    "objectID": "pages/efa.html#overview",
+    "href": "pages/efa.html#overview",
+    "title": "Factor Analysis and PCA",
+    "section": "Overview",
+    "text": "Overview\nThis tutorial looks at the popular psychometric procedures of factor analysis, principal component analysis (PCA) and reliability analysis. Factor analysis is a multivariate technique for identifying whether the correlations between a set of observed variables stem from their relationship to one or more latent variables in the data, each of which takes the form of a linear model. In comparison PCA is a multivariate technique for identifying the linear components of a set of variables. Both are methods for reducing down large numbers of variables into smaller clusters (factors or components).\n\nTheory\n\nQuestionnaire design\n\n\n\nIBM SPSS Statistics\n\nAn old handout on factor analysis using IBM SPSS Statistics\nAn old handout on reliability analysis using IBM SPSS Statistics\nData for Discovering Statistics using IBM SPSS Statistics\n\n\n\nR\n\nTutorial discovr_18 in the discovr package"
+  },
+  {
+    "objectID": "pages/efa.html#video-tutorial",
+    "href": "pages/efa.html#video-tutorial",
+    "title": "Factor Analysis and PCA",
+    "section": "Video Tutorial",
+    "text": "Video Tutorial\n\nFactor Analysis/PCA Using IBM SPSS Statistics"
+  },
+  {
+    "objectID": "pages/efa.html#continue-your-journey",
+    "href": "pages/efa.html#continue-your-journey",
+    "title": "Factor Analysis and PCA",
+    "section": "Continue Your Journey",
+    "text": "Continue Your Journey\nNext topic"
+  }
+]

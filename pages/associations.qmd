@@ -1,0 +1,30 @@
+---
+title: "Relationships between variables (correlation)"
+---
+
+![](../images/postverta_long.png)
+
+## Overview
+
+
+This tutorial takes a look at how to describe relationships between variables using the correlation coefficient. Essentially there are three well-known correlation coefficients. <em>Pearson’s correlation coefficient, r</em> (or Pearson’s product-moment correlation coefficient to give it its full name), is a standardized measure of the strength of relationship between two variables. It can take any value from −1 (as one variable changes, the other changes in the opposite direction by the same amount), through 0 (as one variable changes the other doesn’t change at all), to +1 (as one variable changes, the other changes in the same direction by the same amount). <em>Spearman’s correlation coefficient</em> is Pearson’s correlation coefficient performed on data that have been converted into ranked scores. By analyzing ranks it has less-restrictive assumptions than Pearson's <em>r</em>. Finally, <em>Kendall’s tau</em> is a non-parametric correlation coefficient similar to Spearman’s correlation coefficient, but is preferred for small data sets with a large number of tied ranks.
+
+### IBM SPSS Statistics
+
+- [An old handout on correlation using IBM SPSS Statistics](../repository/correlation_spss.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorials `discovr_07` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorials
+
+
+{{< video https://youtu.be/ltOSxnNc3Tg >}}
+
+
+## Continue Your Journey
+
+[Next topic](mann_whitney.qmd)

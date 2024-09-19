@@ -1,0 +1,190 @@
+---
+title: "Meta-analysis"
+---
+
+![](../images/veritas.png)
+
+## Overview
+
+Meta-analysis: this is a statistical procedure for assimilating research findings. It is based on the simple idea that we can take effect sizes from individual studies that research the same question, quantify the observed effect in a standard way (using effect sizes) and then combine these effects to get a more accurate idea of the true effect in the population.
+
+### Fixed and random effect models
+
+Broadly speaking there are two flavours of the meta-analysis model, both of which are variations on the linear model. The first is the **fixed-effects model**, in which studies in the meta-analysis are assumed to be sampled from a population with a fixed effect size or one that can be predicted from a few predictors. In this model there is one source of 'error', which is sampling variation. Thinking about this in terms of a linear model we have
+
+$$
+\begin{aligned}
+d_k &= \delta + \varepsilon_k \\
+\varepsilon &\sim N(0, \sigma^2)
+\end{aligned}
+$$
+
+In other words, the effect size (Cohen's *d*) in study *k* (denoted $d_k$) is 'predicted from' or 'made up of', the effect size (size of *d*) in the population, which we denote as $\delta$, plus some sampling error, denoted as $\varepsilon_k$ (the standard notation for linear models). The usual assumption applies that the model errors follow a normal distribution with a mean of 0 (i.e. on average the error is zero) and a variance denoted $\sigma^2$. In this model, the effect size in each study is assumed to have been generated from a single population with a single effect size and the only reason that effect sizes vary across studies is because of sampling variance. Spoiler alert, this conceptualization probably isn't realistic [@field_is_2005].
+
+The alternative is the **random-effects model**, in which studies in the meta-analysis are assumed to be sampled from different populations with effect sizes that themselves vary. In this model there are two sources of 'error': (1) sampling variation (denoted as $\varepsilon_k$); (2) variation between the true (population) effect size from which studies are taken (denoted as $\zeta_k$). In terms of a linear model we have
+
+$$
+\begin{aligned}
+d_k &= \delta_k + \varepsilon_k \\
+\delta_k &= \theta + \zeta_k\\
+\varepsilon &\sim N(0, \sigma^2) \\
+\zeta &\sim N(0, \tau^2)
+\end{aligned}
+$$
+
+The first line looks the same as the first line of the previous model except that the population effect size has acquired a subscript of $k$. This difference is important and reflects the fact that in the random-effects model effect sizes within studies are not assumed to reflect a single population effect size but are instead assumed to have come from a population with an effect size that is different to the populations from which other studies in the meta-analysis were sampled. So now, the effect size in study *k* is made up of the effect size in population *k* plus some sampling error. The second line tells us that the population effect size for study *k* ($\delta_k$) is made up of the true effect size ($\theta$) and sampling error at the population level $\zeta_k$. The population-level sampling error is assumed to be normally distributed with a mean of 0 (i.e. on average the error is zero) and a variance denoted $\tau^2$. The random effects model can, therefore be thought of in terms of effect sizes within studies being sampled from populations which themselves are sampled from a 'superpopulation' that has a fixed effect size that represents the 'true' effect size of interest.
+
+This model can be thought of as a hierarchical model with two levels of the hierarchy.
+
+#### The level 1 (participant level) model
+
+Ignoring the distributions of errors to simplify things, at level 1 (the bottom level) we have the participant-level model in which effect sizes for study $k$ are predicted from the effect size in the corresponding population and some sampling variation (at the sample level).
+
+$$
+\begin{aligned}
+d_k &= \delta_k + \varepsilon_k \\
+\end{aligned}
+$$
+
+#### The level 2 (study level) model
+
+At level 2 (the top level) we have the study-level model in which effect sizes for population $k$ is predicted from the true effect size and some sampling variation (at the population level).
+
+
+$$
+\begin{aligned}
+\delta_k &= \theta + \zeta_k\\
+\end{aligned}
+$$
+
+#### The composite model
+
+Rather than spread the model across two lines, we can equivalently write it as:
+
+$$
+\begin{aligned}
+d_k &= \theta + \zeta_k + \varepsilon_k \\
+\varepsilon &\sim N(0, \sigma^2) \\
+\zeta &\sim N(0, \tau^2)
+\end{aligned}
+$$
+
+
+:::{.callout-note}
+
+The primary role of meta-analysis is, therefore, to use the data from many studies to estimate the population effect size. This estimate ($\hat{\theta}$) is assumed to reflect the true size of the effect of interest.
+  
+:::
+
+### Moderators of effect sizes
+
+In the previous section, we saw that the effect size for a study can be expressed as a linear model. In that model, the effect size is predicted from the population effect size and some sources of sampling variation. In effect these models are 'intercept-only' models. That is, the effect size for a study is predicted from only the intercept (i.e. an estimate of the true effect size). However, familiarity with linear models tells us that the basic meta-analytic model could be extended to include any number of predictors. Each predictor would be added to the model, and would be assigned a parameter that is estimated form the data. These parameters quantify the size and direction of the relationship between each predictor and the size of effect. In general, if we denote predictors with $X$ and their parameters with $\beta$ (i.e. commonly-used symbols for linear models), we can use the data to estimate a model that includes predictors:
+
+$$
+\begin{aligned}
+d_k &= \theta + \beta_1X_k + \beta_2X_k + \ldots + \beta_nX_k + \zeta_k + \varepsilon_k \\
+\varepsilon &\sim N(0, \sigma^2) \\
+\zeta &\sim N(0, \tau^2)
+\end{aligned}
+$$
+
+Predictors/moderators can be continuous or categorical variables. When a moderator is made up of several categories then it's possible to use any of the standard coding schemes such as dummy coding, contrast coding and so on. In this tutorial we use an example of dummy coding.
+
+
+:::{.callout-note}
+
+A secondary role of meta-analysis is to test predictions that the size of effect will be associated with specific predictors relating to things like sample and methodological characteristics.
+
+:::
+
+### Multiple effect sizes within studies
+
+It is the norm rather than the exception that studies contribute more than one effect size to a meta-analysis. For example, the outcome of interest might have been measured using different questionnaires yielding a different effect sizes for each measure. Clinical trials often use multiple control groups yielding different effect sizes for the intervention group compared to each of the controls. 
+
+We can handle this situation by adding a middle level to our hierarchy which acknowledges that effect sizes are clustered within studies. 
+
+
+#### The level 1 (participant level) model
+
+At level 1 (the bottom level) we again have the participant level model in which effect sizes for study $k$ are predicted from the effect size in the corresponding population and some sampling variation (at the sample level). This main difference from the random-effects model is that there are now two subscripts to acknowledge that each effect size *j* is nested within study *k*. In other words, it acknowledges the presence of an extra level in the hierarchy.
+
+$$
+\begin{aligned}
+d_{jk} &= \delta_{jk} + \varepsilon_{jk} \\
+\end{aligned}
+$$
+
+
+#### The level 2 (within study level) model
+
+At level 2 (the middle level) we have the within-study model which acknowledges that each population effect size associated with effect size *j* within study *k* ($\delta_{jk}$) is itself made up of the effect size for the associated population, $\kappa_k$ and some sampling error (denoted as $\zeta_{(2)jk}$ where the 2 tells us this is the error at level 2).
+
+$$
+\begin{aligned}
+\delta_{jk} &= \kappa_k + \zeta_{(2)jk}\\
+\end{aligned}
+$$ 
+
+Note that $\kappa_k$ does not have a *j* subscript because all of the *j* effect sizes within a study have the same population and, therefore, the same population effect size. However, different studies (and, remember, *k* denotes studies) have the same population and, therefore, the same population effect size so $\kappa$ varies across studies (*k*) but not across effect sizes within a study (*i*). 
+
+The sampling error (denoted as $\zeta_{(2)jk}$) is assumed to be normally distributed with a mean of 0 and variance that we will denote as $\sigma^2_w$ with the *w* reminding us that this is *within*-study sampling error. The sampling error ($\zeta_{(3)k}$) reflects sampling variation across both effect sizes and studies and so has both *j* and *k* as subscripts.
+
+
+
+#### The level 3 (between-study level) model
+
+At level 3 (the top level) we have the study-level model in which effect sizes for population $k$ are predicted from the true effect size ($\theta$) and some sampling variation (at the population level).
+
+$$
+\begin{aligned}
+\kappa_k &= \theta + \zeta_{(3)k}\\
+\end{aligned}
+$$
+
+Note that $\theta$ has no subscripts because it is fixed (it is the true effect size and does not vary by study *k* or by effect size *j*). The sampling error (denoted as $\zeta_{(3)k}$) is assumed to be normally distributed with a mean of 0 and variance that we will denote as $\sigma^2_b$ with the *b* reminding us that this is *between*-study sampling error. The sampling error ($\zeta_{(3)k}$) reflects sampling variation across studies and so has a *k* subscript.
+
+
+
+#### The composite model
+
+Rather than spread the model across three lines, we can equivalently write it as follows, with the bottom three lines explicitly describing the distributions of the error terms.
+
+$$
+\begin{aligned}
+d_{jk} &= \theta + \zeta_{(2)jk} + \zeta_{(3)k} + \varepsilon_{jk} \\
+\varepsilon &\sim N(0, \sigma^2) \\
+\zeta_{(2)} &\sim N(0, \sigma_w^2) \\
+\zeta_{(3)} &\sim N(0, \sigma_b^2) \\
+\end{aligned}
+$$
+
+In other words, effect size *j* within study *k* is made up of the true effect ($\theta$) plus sampling variation at the participant level ($\varepsilon_{jk}$), within each study ($\zeta_{(2)jk}$) and across studies ($\zeta_{(3)k}$)
+
+#### Moderators
+
+Within this extended framework we can add moderators of effect sizes in the same way as described earlier but the moderators can operate at the study level (all effect sizes within a study have the same value for a particular model) in which case they will have a *k* subscript only, or they can operate at the effect size level (effect sizes within a study can have different values of the same moderator in which case they have a *jk* subscript.) For example,
+
+$$
+\begin{aligned}
+d_{jk} &= \theta + \beta_1X_k + \beta_2X_k + \ldots + \beta_nX_k + \zeta_{(2)jk} + \zeta_{(3)k} + \varepsilon_{jk} \\
+\varepsilon &\sim N(0, \sigma^2) \\
+\zeta_{(2)} &\sim N(0, \sigma_w^2) \\
+\zeta_{(3)} &\sim N(0, \sigma_b^2) \\
+\end{aligned}
+$$
+
+
+
+### IBM SPSS Statistics
+
+- Article I published on how to do a meta-analysis. Field, A. P., &amp; Gillett, R. (2010). [How to do a meta-analysis](../repository/2010_field_&_gillett.pdf). *British Journal of Mathematical &amp; Statistical Psychology*, 63(3), 665-694. doi:[10.1348/000711010x502733](https://doi.org/10.1348/000711010X502733)
+
+### R
+
+- The `metahelpr` package contains an interactive tutorial for conducting meta-analysis using R: [https://github.com/profandyfield/metahelpr](https://github.com/profandyfield/metahelpr)
+
+
+
+## Continue Your Journey
+
+[Next topic](sem.qmd)

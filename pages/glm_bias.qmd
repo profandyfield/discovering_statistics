@@ -1,0 +1,33 @@
+---
+title: "Bias in the General Linear Model"
+---
+
+![](../images/antevorta_long.png)
+
+## Overview
+
+In the previous tutorial we looked at how to apply the linear model, and this tutorial goes on to look at how we explore bias in the model. It develops what we learnt about bias in the [Postverta](postverta.qmd) district and applies it to a concrete example. We also look in more detail at bootstrapping.
+
+
+### IBM SPSS Statistics
+
+- [A really old handout on bias using IBM SPSS Statistics](../repository/linearmodelsbias.pdf)
+- [Data for Discovering Statistics using IBM SPSS Statistics](https://discoverspss.com/pages/data)
+
+### R
+
+- [Tutorial `discovr_06` in the `discovr` package](https://www.discovr.rocks/discovr/)
+
+
+## Video Tutorial
+
+### The beast of bias
+
+
+{{< video https://youtu.be/XSjj7IeBHnA?si=Mw9cyzKTe2rMc8g4 >}}
+
+
+
+## Continue Your Journey
+
+[Next topic](moderation.qmd)
