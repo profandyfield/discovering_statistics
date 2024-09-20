@@ -17,6 +17,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -38,7 +72,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -63,7 +98,13 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H6MJK8MHBB"></script><script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-H6MJK8MHBB', { 'anonymize_ip': true});
+</script>
 </head>
 <body class="floating nav-fixed">
 
@@ -154,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://bsky.app/profile/profandyfield.bsky.social"> 
-<span class="menu-text"><img src="images/bluesky_icon.svg" class="img-fluid"></span></a>
+<span class="menu-text"><iconify-icon role="img" inline="" icon="fa6-brands:bluesky" aria-label="Icon bluesky from fa6-brands Iconify.design set." title="Icon bluesky from fa6-brands Iconify.design set."></iconify-icon></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/profandyfield/"> <i class="bi bi-linkedin" role="img">
@@ -207,6 +248,9 @@ ul.task-list li input[type="checkbox"] {
 </header><p><img src="../images/postverta_long.png" class="img-fluid"></p>
 <section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p><a href="https://www.r-project.org/">R</a> is a free software environment for statistical computing and graphics. It is what’s known as ‘open source’, which means that unlike commercial software companies that protectively hide away the code on which their software is based, the people who developed R allow everyone to access their code. This open source philosophy allows anyone, anywhere to contribute to the software. Consequently, the capabilities of R dynamically expand as people from all over the world add to it. In essence, R exists as a base package with a reasonable amount of functionality. Once you have downloaded R and installed it on your own computer, you can start doing some data analysis and graphs. However, the beauty of R is that it can be expanded by downloading packages that add specific functionality to the program. Commands in R are generally made up of two parts: objects and functions. These are separated by <code>&lt;-</code>, which you can think of meaning ‘is created from’. As such, the general form of a command is:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">name_of_object</span> <span class="op">&lt;-</span> <span class="fu">the_function_I_want_to_use</span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>Which means the object called <code>name_of_object</code> is created from the function that goes by the name of <code>the_function_I_want_to_use</code>. An object is anything created in R. It could be a variable, a collection of variables, a statistical model etc. Objects can be single values (such as the mean of a set of scores) or collections of information; for example, when you run an analysis, you create an object that contains the output of that analysis, which means that this object contains many different values and variables. Functions are the things that you do in R to create your objects.</p>
 <p>The best way to learn R (in my opinion) is to install and work through one my packages of interactive tutorials. The <code>adventr</code> package aligns to the material in <a href="../pages/ais.html">An Adventure in Statistics</a> whereas the <code>discovr</code> package aligns to the material in <a href="../pages/dsur.html">Discovering Statistics Using R and RStudio</a>. If you don’t own either of these books use the <code>discovr</code> package.</p>
 </section><section id="interactive-tutorials-to-learn-r" class="level2"><h2 class="anchored" data-anchor-id="interactive-tutorials-to-learn-r">Interactive tutorials to learn R</h2>

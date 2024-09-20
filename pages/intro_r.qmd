@@ -13,6 +13,7 @@ Commands in R are generally made up of two parts: objects and functions. These a
 
 ```{r}
 #| eval: false
+#| echo: true
 
 name_of_object <- the_function_I_want_to_use()
 ```
