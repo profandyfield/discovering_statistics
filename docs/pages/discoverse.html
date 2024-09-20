@@ -100,10 +100,25 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="../pages/discoverse.html" aria-current="page"> 
 <span class="menu-text">The discoverse</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../pages/books.html"> 
-<span class="menu-text">Books</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-books" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Books</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-books">    
+        <li>
+    <a class="dropdown-item" href="../pages/ais.html">
+ <span class="dropdown-text">An adventure in Statistics</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/dsus.html">
+ <span class="dropdown-text">Discovering Statistics Using IBM SPSS Statistics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/dsur.html">
+ <span class="dropdown-text">Discovering Statistics Using R and RStudio</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-statistics-hell-p" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Statistics Hell-p</span>
@@ -153,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://bsky.app/profile/profandyfield.bsky.social"> 
-<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
+<span class="menu-text"><img src="images/bluesky_icon.svg" class="img-fluid"></span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://www.linkedin.com/in/profandyfield/"> <i class="bi bi-linkedin" role="img">
@@ -200,25 +215,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The discover-verse (or discoverse for short) is a universe of websites the have resources to learn statistics using specific software apps. Each one is typically linked to one of my <a href="../pages/books.html">books</a>. Click on the image to take you to the website</p>
+<p>The discover-verse (or discoverse for short) is a universe of websites the have resources to learn statistics using specific software apps. Each one is typically linked to one of my textbooks. Click on the image caption to take you to each of the websites.</p>
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-layout="[[1,1], [1]]">
+<div class="quarto-layout-panel" data-layout="[[1,1], [1, 1]]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<figcaption><a href="https://discoverjasp.com/">JASP</a></figcaption>
-<p><a href="../images/hex_dsjasp.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="JASP"><img src="../images/hex_dsjasp.png" class="img-fluid figure-img" style="width:50.0%" alt="JASP"></a></p>
+<figcaption><a href="https://discovr.rocks/">R</a></figcaption>
+<p><a href="../images/hex_discovr.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="R"><img src="../images/hex_discovr.png" class="img-fluid figure-img" style="width:50.0%" alt="R"></a></p>
 </figure>
 </div>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<figcaption><a href="https://statisticsadventure.com/">An adventure in statistics</a></figcaption>
+<p><a href="../images/hex_adventr.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="An adventure in statistics"><img src="../images/hex_adventr.png" class="img-fluid figure-img" style="width:50.0%" alt="An adventure in statistics"></a></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
 <figcaption><a href="https://discoverspss.com/">SPSS</a></figcaption>
-<p><a href="../images/hex_dsspss.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="SPSS"><img src="../images/hex_dsspss.png" class="img-fluid figure-img" style="width:50.0%" alt="SPSS"></a></p>
+<p><a href="../images/hex_dsspss.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="SPSS"><img src="../images/hex_dsspss.png" class="img-fluid figure-img" style="width:50.0%" alt="SPSS"></a></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption><a href="https://discoverjasp.com/">JASP</a></figcaption>
+<p><a href="../images/hex_dsjasp.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="JASP"><img src="../images/hex_dsjasp.png" class="img-fluid figure-img" style="width:50.0%" alt="JASP"></a></p>
 </figure>
 </div>
 </div>
@@ -806,7 +839,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false,"openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

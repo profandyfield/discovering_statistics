@@ -30,7 +30,7 @@ website:
         href: https://www.discovr.rocks
       - text: "{{< fa brands x-twitter >}}"
         href: https://twitter.com/profandyfield
-      - text: "{{< fa brands bluesky >}}"
+      - text: "{{< iconify fa6-brands bluesky >}}"
         href: https://bsky.app/profile/profandyfield.bsky.social
       - icon: linkedin
         href: https://www.linkedin.com/in/profandyfield/
