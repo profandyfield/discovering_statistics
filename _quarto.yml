@@ -7,13 +7,10 @@ website:
     pinned: true
     logo: /images/ds_favicon.png
     left:
+      - text: "About me"
+        href: https://profandyfield.com
       - text: "The discoverse"
-        href: pages/discoverse.qmd
-      - text: "Books"
-        menu:
-         - href: pages/ais.qmd
-         - href: pages/dsus.qmd
-         - href: pages/dsur.qmd
+        href: https://profandyfield.com/discoverse
       - text: "Statistics Hell-p"
         menu:
           - href: pages/postverta.qmd

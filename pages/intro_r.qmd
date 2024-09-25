@@ -21,7 +21,7 @@ name_of_object <- the_function_I_want_to_use()
 
 Which means the object called `name_of_object` is created from the function that goes by the name of `the_function_I_want_to_use`. An object is anything created in R. It could be a variable, a collection of variables, a statistical model etc. Objects can be single values (such as the mean of a set of scores) or collections of information; for example, when you run an analysis, you create an object that contains the output of that analysis, which means that this object contains many different values and variables. Functions are the things that you do in R to create your objects.
 
-The best way to learn R (in my opinion) is to install and work through one my packages of interactive tutorials. The `adventr` package aligns to the material in [An Adventure in Statistics](ais.qmd) whereas the `discovr` package aligns to the material in [Discovering Statistics Using R and RStudio](dsur.qmd). If you don't own either of these books use the `discovr` package.
+The best way to learn R (in my opinion) is to install and work through one my packages of interactive tutorials. The `adventr` package aligns to the material in [An Adventure in Statistics](https://profandyfield.com/discoverse/ais/) whereas the `discovr` package aligns to the material in [Discovering Statistics Using R and RStudio](https://profandyfield.com/discoverse/dsur/). If you don't own either of these books use the `discovr` package.
 
 ## Interactive tutorials to learn R
 
