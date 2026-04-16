@@ -8,4 +8,11 @@ about:
 
 
 
-Welcome to Discovering Statistics. This website brings together many of my free resources to help you to get to grips with statistics. These include handouts, tutorials, extracts from my books, videos and blogs. It’s an adventure in statistics.
+Welcome to Discovering Statistics. This website brings together many of my free resources to help you to get to grips with statistics. These include handouts, tutorials, extracts from my books, videos and blogs. It's an adventure in statistics.
+
+
+
+```{=html}
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#c21818', 'Q5Q218ASK7');kofiwidget2.draw();</script> 
+```
+
