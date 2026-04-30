@@ -20,7 +20,7 @@ IBM [SPSS](https://en.wikipedia.org/wiki/SPSS) Statistics is one of the most wid
 
 ### Entering Data
 
-{{< video https://youtu.be/b163iBByycw >}}
+{{< video https://youtu.be/CR7v26B5ibI >}}
 
 ### The Viewer Window
 
@@ -40,9 +40,19 @@ IBM [SPSS](https://en.wikipedia.org/wiki/SPSS) Statistics is one of the most wid
 
 ### Importing Excel Files
 
-{{< video https://youtu.be/nchjj4XzIWc >}}
+{{< video https://youtu.be/BsDWmmfmVK0 >}}
 
+### Exporting Excel Files
 
+{{< video https://youtu.be/brge4WZ9SkM >}}
+
+### Importing CSV Files
+
+{{< video https://youtu.be/eAXV4UHTmRs >}}
+
+### Exporting CSV Files
+
+{{< video  https://youtu.be/H_1PDYz74RU >}}
 
 ## Continue Your Journey
 
