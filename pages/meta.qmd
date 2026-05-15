@@ -178,6 +178,7 @@ $$
 ### IBM SPSS Statistics
 
 - Article I published on how to do a meta-analysis. Field, A. P., &amp; Gillett, R. (2010). [How to do a meta-analysis](../repository/2010_field_&_gillett.pdf). *British Journal of Mathematical &amp; Statistical Psychology*, 63(3), 665-694. doi:[10.1348/000711010x502733](https://doi.org/10.1348/000711010X502733)
+  - [Download the SPSS syntax and data file](../repository/field_gillett_resources.zip)
 
 ### R
 
