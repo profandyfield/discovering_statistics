@@ -17,7 +17,7 @@ You can extend the hierarchical linear model (see the last tutorial) to incorpor
 
 ### R
 
-- [Tutorial `discovr_15` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_15` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorial

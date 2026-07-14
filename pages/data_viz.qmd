@@ -18,7 +18,7 @@ This tutorial takes a breather from the linear model to look at presenting data 
 
 ### R
 
-- [Tutorials `discovr_02` and `discovr_05` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorials `discovr_02` and `discovr_05` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 - [Tutorials `adventr_03` and `adventr_05` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
 
 

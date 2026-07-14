@@ -22,7 +22,7 @@ This scenario is a factorial design, and we can apply a linear model to look at 
 
 ### R
 
-- [Tutorial `discovr_13` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_13` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 - [Tutorial `adventr_17` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
 
 

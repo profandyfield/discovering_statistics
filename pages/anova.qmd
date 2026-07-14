@@ -27,7 +27,7 @@ If the *F*-test suggests that there are significant group differences (i.e. you 
 
 ### R
 
-- [Tutorial `discovr_11` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_11` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 - [Tutorial `adventr_16` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
 
 

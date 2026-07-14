@@ -21,7 +21,7 @@ Both of these tests are special cases of the GLM, but are often taught as indepe
 
 ### R
 
-- [Tutorial `discovr_09` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_09` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 - [Tutorial `adventr_15` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
 
 

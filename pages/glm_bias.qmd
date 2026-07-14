@@ -16,7 +16,7 @@ In the previous tutorial we looked at how to apply the linear model, and this tu
 
 ### R
 
-- [Tutorial `discovr_06` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_06` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorial

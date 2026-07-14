@@ -22,7 +22,7 @@ In fact, the linear model can be expanded to look at repeated observations of th
 
 ### R
 
-- [Tutorial `discovr_14` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_14` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorial

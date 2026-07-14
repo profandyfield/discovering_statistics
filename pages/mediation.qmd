@@ -15,16 +15,22 @@ If you have travelled through the district of [Postverta](postverta.qmd) you sho
 
 ### R
 
-- [Tutorial `discovr_10` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_10` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorials
 
+### What is Mediation?
+
+{{< video https://youtu.be/VVwXjtkLfCs >}}
+
 ### Mediation using IBM SPSS Statistics
 
-{{< video https://youtu.be/RqkGMqDU20Q >}}
+{{< video https://youtu.be/xTFOWJWglF4 >}}
 
+### Mediation using R
 
+{{< video https://youtu.be/xquhwrKLifo >}}
 
 ## Continue Your Journey
 

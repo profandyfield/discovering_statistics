@@ -17,7 +17,7 @@ This tutorial is a bit lacking at present! It will, in time (maybe), look at how
 
 ### R
 
-- [Tutorials `discovr_02` and `discovr_03` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorials `discovr_02` and `discovr_03` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 - [Tutorials `adventr_03` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
 - [Data for An adventure in Statistics](https://www.statisticsadventure.com/data/)
 

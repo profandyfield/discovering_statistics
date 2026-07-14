@@ -17,7 +17,7 @@ Having been introduced to the idea that many common statistical tests are variat
 
 ### R
 
-- [Tutorial `discovr_03` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_03` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorials

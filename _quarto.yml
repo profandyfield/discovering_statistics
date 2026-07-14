@@ -38,7 +38,7 @@ website:
     type: textbox
   page-footer: 
     center: |
-      <span class="faux-block">&#169; 2024 Andy Field CC BY-SA 4.0</span>
+      <span class="faux-block">&#169; 2024-2026 Andy Field CC BY-SA 4.0</span>
   google-analytics: "G-H6MJK8MHBB"
 
 project:

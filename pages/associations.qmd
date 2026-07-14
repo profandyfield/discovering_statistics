@@ -16,7 +16,7 @@ This tutorial takes a look at how to describe relationships between variables us
 
 ### R
 
-- [Tutorials `discovr_07` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorials `discovr_07` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorials

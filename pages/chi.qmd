@@ -44,7 +44,7 @@ A *contingency table* displays the cross-classification of two or more categoric
 
 ### R
 
-- [Tutorial `discovr_19` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_18` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorial

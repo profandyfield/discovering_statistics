@@ -25,7 +25,7 @@ The best way to learn R (in my opinion) is to install and work through one my pa
 
 ## Interactive tutorials to learn R
 
-- [The `discovr` package](https://www.discovr.rocks/discovr/)
+- [The `discovr` package](https://www.discovr.rocks/pages/discovr)
 - [The `adventr` package](https://www.statisticsadventure.com/adventr/)
 
 ## Video tutorials
@@ -33,6 +33,16 @@ The best way to learn R (in my opinion) is to install and work through one my pa
 ### Getting Started in R
 
 To help you set up and work with R I recommend working through these video tutorials, which introduce you to the workflow in RStudio cloud, and give you a tour of the RStudio app.
+
+####  Setting up R and RStudio
+
+This video shows how to set up R and RStudio on your own computer
+
+{{< video https://youtu.be/_oLfjq7b_eU >}}
+
+This video shows how to set up R and RStudio on Posit Cloud
+
+{{< video https://youtu.be/Nkb2iKanUAo >}}
 
 #### Workflow in Posit (RStudio) Cloud
 
@@ -77,45 +87,49 @@ Quarto is used to create documents in RStudio. It combines standard word process
 
 This series of videos looks at the basic principles of writing code in R and how to integrate R code into a Quarto document.
 
-#### Coding in RStudio visual editor [Part 1]
+####  What is ... an R package?
 
-This video looks at how to create objects and the structure of commands in R (i.e. the assignment operator, `<-`).
+This tutorial explains what functions and packages are and how to install packages within R.
 
-{{< video https://www.youtube.com/embed/8QHCx6RXK4Y >}}
-
-
-low="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></p>
-
-#### Coding in RStudio visual editor [Part 2]
-
-This video looks at what a function in R is, what an R package is, and how to install and use them. We look specifically at the `here()` function to give us a filepath.
-
-{{< video https://www.youtube.com/embed/KD5ScL27FRo>}}
-
-#### Coding in RStudio visual editor [Part 3]
-
-This tutorial explores using the pipe operator to combine functions together.
-
-{{< video https://www.youtube.com/embed/wYKdgazQ640 >}}
+{{< video https://youtu.be/3MRHWzEgwaA >}}
 
 
-#### Coding in RStudio visual editor [Part 4]
+####  What is ... is a function?
 
-This tutorial explores tibbles and how to render them using the <code>kable()</code> function.
+This tutorial explains what a function is and demonstrates using an example in R.
 
-{{< video https://www.youtube.com/embed/2e17-I6ZW8A >}}
+{{< video https://youtu.be/mM0fbog7zC8 >}}
 
 
-#### Coding in RStudio visual editor [Part 5]
-This tutorial revisits functions to look at what arguments within functions do. We also find out how energetic Iron Maiden songs are on average.
+####  Creating stuff using R
 
-{{< video https://www.youtube.com/embed/TMXSLof8haA >}}
+This tutorial explains how to create objects in R using the assignment operator. The second example looks at storing some data, which leads us into describing dataframes/tibbles and how to access variables within them.
 
-#### Coding in RStudio visual editor [Part 6]
+{{< video https://youtu.be/i894fWOkmEw >}}
 
-This tutorial explores how code chunks are rendered in quarto documents and offers some tips on debugging errors when rendering goes wrong.
+####  Using functions and the pipe operator
 
-{{< video https://www.youtube.com/embed/DOyhdu5l32Y >}}
+This tutorial explores how to use functions in R with the pipe operator. We use spotify metrics for every song by the band Iron Maiden to show how to select variables in a data frame and how to include only cases that meet a specific condition. We use the tidyverse functions `select()` and `filter()` to achieve this before looking at how to combine these functions using the pipe operator.
+
+{{< video https://youtu.be/FRr5kdX-3x0 >}}
+
+####  Getting data into R
+
+This tutorial explores how to use the `here()` and `read_csv()` functions to import a CSV (comma separated value file) file in R. This tutorial explains some code that is used extensively in other tutorials.
+
+{{< video https://youtu.be/xFrjt_qhrIs?si=X_p2Umu4U7VOHPd7 >}}
+
+#### Creating variables using mutate()
+
+This tutorial explores how to use the `mutate()` function in R to create new variables in your data frame. We use spotify metrics for every song by the band Iron Maiden to show how to create new variables from existing ones. We convert the song durations from milliseconds to seconds, and convert the year each album was released into a variable representing the years since the first album was released.
+
+{{< video https://youtu.be/sFMgBTt81ZY >}}
+
+####  Fitting statistical models: a general process
+
+The process of E.V.I.L is a framework that applies to any statistical model you fit and reminds you of the key steps in the model fitting process. This tutorial shows how I used R to implement this framework to test my prediction that my favourite band, Iron Maiden, write longer songs as they get further into their career. It shows how the tables and plots in the other video were generated using the `easystats` package.
+
+{{< video https://youtu.be/L3QkdLYqSw4 >}}
 
 
 ## Continue Your Journey

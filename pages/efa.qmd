@@ -21,7 +21,7 @@ This tutorial looks at the popular psychometric procedures of factor analysis, p
 
 ### R
 
-- [Tutorial `discovr_18` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_17` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorial

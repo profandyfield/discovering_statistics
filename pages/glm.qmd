@@ -16,7 +16,7 @@ If you have travelled through the district of [Postverta](postverta.qmd) you sho
 
 ### R
 
-- [Tutorial `discovr_08` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_08` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 - [Tutorial `adventr_14` in the `adventr` package](https://www.statisticsadventure.com/adventr/)
 
 

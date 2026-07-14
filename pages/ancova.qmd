@@ -17,7 +17,7 @@ When the goal is to look at differences between group means while accounting for
 
 ### R
 
-- [Tutorial `discovr_12` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_12` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorial

@@ -17,7 +17,7 @@ This tutorial extends the general linear model to look at the situation where yo
 
 ### R
 
-- [Tutorial `discovr_20` in the `discovr` package](https://www.discovr.rocks/discovr/)
+- [Tutorial `discovr_19` in the `discovr` package](https://www.discovr.rocks/pages/discovr)
 
 
 ## Video Tutorial
